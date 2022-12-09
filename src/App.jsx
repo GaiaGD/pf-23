@@ -7,7 +7,7 @@ import Footer from "./components/Footer"
 function App() {
 
   return (
-    <div className="App bg-black h-screen">
+    <div className="App bg-black">
       <Header />
 
       <Routes>
