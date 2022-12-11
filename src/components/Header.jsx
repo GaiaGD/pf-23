@@ -3,7 +3,7 @@ import React from 'react'
 function Header() {
 
   return (
-    <div className='sticky top-0 z-50 border-b-2 border-white-100 border-opacity-20 flex justify-between items-center'>
+    <div className='sticky top-0 z-50 border-b-[0.1px] border-white-100 border-opacity-20 flex justify-between items-center'>
         <div className='header-planets flex items-center max-w-xl m-5'>
             <div className="mr-14 opacity-30" id='mercury'>
                 <img className="w-full" src='src/assets/img/mercury.png'/>
