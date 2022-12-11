@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { HashLink as Link } from 'react-router-hash-link'
+import { animateScroll as scroll } from "react-scroll";
 function Header() {
 
   return (
@@ -28,12 +29,30 @@ function Header() {
             </div>
         </div>
         <div className='flex max-w-lg'>
-            <div className='w-32'>
+            <Link
+                smooth={true}
+                offset={-70}
+                duration={1500}
+                className='w-32'
+                to="/">
+                <h2 className='text-white text-lg'>HOME</h2>
+            </Link>
+            <Link
+                smooth={true}
+                offset={-70}
+                duration={1500}
+                className='w-32'
+                to="/#about">
                 <h2 className='text-white text-lg'>ABOUT</h2>
-            </div>
-            <div className='w-32'>
+            </Link>
+            <Link
+                smooth={true}
+                offset={-70}
+                duration={1500}
+                className='w-32'
+                to="/#projects">
                 <h2 className='text-white text-lg'>WORK</h2>
-            </div>
+            </Link>
             <div className='w-32'>
                 <h2 className='text-white text-lg'>CONTACT</h2>
             </div>

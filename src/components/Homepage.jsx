@@ -1,5 +1,7 @@
 import React from 'react'
-import {Routes, Route} from "react-router-dom"
+import {Link} from "react-router-dom"
+import { HashLink } from 'react-router-hash-link'
+import { animateScroll as scroll } from "react-scroll";
 
 function Homepage() {
 
@@ -9,14 +11,23 @@ function Homepage() {
       <div className='flex justify-between items-center intro'>
         <div className='mt-64 mb-32 mx-64 flex flex-col items-center'>
             <h1 className='text-orange-500 text-6xl text-center'>Lorem ipsum dolor sit amet, <span className='text-red-600'>Designer & Front-end Developer</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
-            <div className='cta p-5 border-red-600 border-2 border-solid m-16 w-1/3'>
+            <HashLink
+                smooth={true}
+                offset={-70}
+                duration={1500}
+                className='cta p-5 border-red-600 border-2 border-solid m-16 w-1/3'
+                to="/#projects"
+            >
               <h5 className='text-red-600 text-center'>THINGS I'VE MADE</h5>
-            </div>
+            </HashLink>
+            {/* <div className='cta p-5 border-red-600 border-2 border-solid m-16 w-1/3'>
+              <h5 className='text-red-600 text-center'>THINGS I'VE MADE</h5>
+            </div> */}
         </div>
       </div>
 
       {/* things I've done */}
-      <div className='projects mt-64 mx-64'>
+      <div id='projects' className='projects mt-64 mx-64'>
         <div className='my-32'>
             <h2 className='text-red-600 text-4xl uppercase'>what I’ve designed & built:</h2>
         </div>
@@ -33,9 +44,11 @@ function Homepage() {
               <p className='my-8 text-base'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <div className='flex justify-between items-center'>
                 <div className='flex w-full'>
-                  <div className='cta p-5 w-full border-red-600 border-2 border-solid mr-8'>
-                    <h5 className='text-red-600 text-center uppercase'>view project</h5>
-                  </div>
+                  <Link to="/wheelsapp" className='cta p-5 w-full border-red-600 border-2 border-solid mr-8'>
+                    <div>
+                      <h5 className='text-red-600 text-center uppercase'>view project</h5>
+                    </div>
+                  </Link>
                   <div className='cta p-5 w-full border-red-600 border-2 border-solid'>
                     <h5 className='text-red-600 text-center uppercase'>live site</h5>
                   </div>
@@ -82,7 +95,7 @@ function Homepage() {
       </div>
 
       {/* about me */}
-      <div className='flex justify-between items-center intro'>
+      <div id='about' className='flex justify-between items-center intro'>
         <div className='mt-64 mb-32 mx-64 flex flex-col items-end'>
             <h1 className='text-red-600 text-4xl text-right uppercase my-8'>about me</h1>
             <h2 className='text-white text-3xl text-right'>Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip, space exploration, animal rescue & jiu-jitsu white belt ex ea commodo consequat.</h2>
