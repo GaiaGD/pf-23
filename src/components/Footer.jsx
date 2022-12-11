@@ -4,9 +4,35 @@ import React from 'react'
 function Footer() {
 
   return (
-    <div>
-        <h2 className='text-white fixed bottom-0'>Footer</h2>
-    </div>
+    <>
+      <div className='px-32 py-16'>
+        <div className='flex-col justify-between'>
+          <h1 className='text-red-600 text-4xl uppercase mb-8'>get in touch</h1>
+          <div className='flex justify-between items-end'>
+            <div className='w-6/12'>
+              <h2 className='text-white text-2xl mb-4'>Get in touch or shoot me an email directly on <span className='text-orange-500'>hi.gaiadg@gmail.com</span></h2>
+              <form className="flex-col">
+                <input type="text" className='w-full my-2 p-3 bg-black border-[1px] border-solid border-orange-500 hover:border-red-600 focus:border-red-600 active:border-red-600 focus:ring-red-600 text-white'></input>
+                <input type="email" className='w-full my-2 p-3 bg-black border-[1px] border-solid border-orange-500 hover:border-red-600 focus:border-red-600 active:border-red-600 focus:ring-red-600 text-white'></input>
+                <textarea type="text" className='w-full my-2 p-3 bg-black border-[1px] border-solid border-orange-500 hover:border-red-600 focus:border-red-600 active:border-red-600 focus:ring-red-600 text-white'></textarea>
+                <div className='cta p-5 border-red-600 border-2 border-solid uppercase text-red-600 text-center w-1/3'>send</div>
+              </form>
+            </div>
+            <div className='w-3-12 icons contact flex'>
+              <div className='linkedin mr-16'>
+                <img src='src/assets/img/contact/linkedin.svg'/>
+              </div>
+              <div className='github'>
+                <img src='src/assets/img/contact/github.svg'/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="px-32 py-4 border-t-[0.1px] border-white-100 border-opacity-10 text-center">
+        <small className=''>Designed & Built by Gaia DG</small>
+      </div>
+    </>
   )
 }
 
