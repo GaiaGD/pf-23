@@ -5,7 +5,7 @@ function Footer() {
 
   return (
     <>
-      <div className='px-32 py-16 bottom-0'>
+      <div id="contacts" className='px-32 py-16 bottom-0'>
         <div className='flex-col justify-between'>
           <h1 className='text-red-600 text-4xl uppercase mb-8'>get in touch</h1>
           <div className='flex justify-between items-end'>
@@ -20,10 +20,14 @@ function Footer() {
             </div>
             <div className='w-3-12 icons contact flex'>
               <div className='linkedin mr-16'>
-                <img src='src/assets/img/contact/linkedin.svg'/>
+                <a target="_blank" className='' href="https://www.linkedin.com/in/gaia-di-gregorio-bb966044/">
+                  <img src='src/assets/img/contact/linkedin.svg'/>
+                </a>
               </div>
               <div className='github'>
-                <img src='src/assets/img/contact/github.svg'/>
+                <a target="_blank" className='' href="https://github.com/gaiagd">
+                  <img src='src/assets/img/contact/github.svg'/>
+                </a>
               </div>
             </div>
           </div>

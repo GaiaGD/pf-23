@@ -53,9 +53,17 @@ function Header() {
                 to="/#projects">
                 <h2 className='text-white text-lg'>WORK</h2>
             </Link>
-            <div className='w-32'>
+            <Link
+                smooth={true}
+                offset={-70}
+                duration={1500}
+                className='w-32'
+                to="/#contacts">
                 <h2 className='text-white text-lg'>CONTACT</h2>
-            </div>
+            </Link>
+            {/* <div className='w-32'>
+                <h2 className='text-white text-lg'>CONTACT</h2>
+            </div> */}
         </div>
     </div>
   )
