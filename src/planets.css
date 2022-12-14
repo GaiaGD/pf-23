@@ -1,0 +1,104 @@
+.mercuryOne {
+    color: #C8C8C8;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.mercuryTwo {
+    color: #3C3C3C;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.mercuryCta {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C8C8C8;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+
+.venusOne {
+    color: #FFE600;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.venusTwo {
+    color: #E5BC96;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.venusCta {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFE600;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+
+.marsOne {
+    color: #FF0000;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.marsTwo {
+    color: #FF7B00;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.marsCta {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FF0000;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+
+.jupiterOne {
+    color: #E74663;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.jupiterTwo {
+    color: #88ACB4;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.jupiterCta {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E74663;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+
+.saturnOne {
+    color: #B095A7;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.saturnTwo {
+    color: #F3BF8E;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.saturnCta {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #B095A7;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+
+.uranusOne {
+    color: #00EFFE;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+.uranusTwo {
+    color: #C5F4FF;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+.uranusCta {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #00EFFE;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+
+.neptuneOne {
+    color: #281E9A;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+.neptuneTwo {
+    color: #3061E0;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+.neptuneCta {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #281E9A;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
