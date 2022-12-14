@@ -10,7 +10,7 @@ function Homepage() {
       {/* intro */}
       <div className='flex justify-between items-center intro'>
         <div className='mt-64 mb-32 mx-64 flex flex-col items-center'>
-            <h1 className='text-orange-500 text-6xl text-center'>Lorem ipsum dolor sit amet, <span className='text-red-600'>Designer & Front-end Developer</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
+            <h1 className='text-orange-500 text-6xl text-center glow'>Lorem ipsum dolor sit amet, <span className='text-red-600'>Designer & Front-end Developer</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
             <HashLink
                 smooth={true}
                 offset={-70}

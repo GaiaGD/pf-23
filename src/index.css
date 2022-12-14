@@ -10,3 +10,30 @@ html, body {
     position: relative;
     font-family: 'Archivo', sans-serif;
 }
+
+.glow {
+    text-shadow: -5px 3px 7px rgb(255 0 0 / 75%);
+}
+
+.wheelsapp-case-study {
+    background-image: url('assets/img/projects/wheelsapp-bg.jpg');
+    background-size: cover;
+    /* filter: opacity(0.5); */
+}
+
+.arrow {
+border: solid rgb(255, 60, 60);
+border-width: 0 2px 2px 0;
+display: inline-block;
+padding: 20px;
+}
+
+.right {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+}
+
+.left {
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+}

@@ -5,7 +5,7 @@ function Footer() {
 
   return (
     <>
-      <div id="contacts" className='px-32 py-16 bottom-0'>
+      <div id="contacts" className='px-64 py-16 bottom-0'>
         <div className='flex-col justify-between'>
           <h1 className='text-red-600 text-4xl uppercase mb-8'>get in touch</h1>
           <div className='flex justify-between items-end'>
