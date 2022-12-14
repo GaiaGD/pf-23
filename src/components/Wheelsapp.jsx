@@ -12,11 +12,10 @@ function Wheelsapp() {
       </div>
 
       <div className='flex w-2/6 ml-64'>
-        
-          <div className='cta p-5 w-full border-red-600 border-2 border-solid mr-8'>
+          <div className='cta p-5 w-full border-red-700 border-2 border-solid mr-8'>
             <h5 className='text-red-600 text-center uppercase'>live site</h5>
           </div>
-          <div className='cta p-5 w-full border-red-600 border-2 border-solid'>
+          <div className='cta p-5 w-full border-red-700 border-2 border-solid'>
             <h5 className='text-red-600 text-center uppercase'>view on github</h5>
           </div>
       </div>
@@ -55,13 +54,13 @@ function Wheelsapp() {
 
         <div className='w-2/6 flex-col content-between'>
           <Link to="">
-            <div className='cta p-5 w-full border-red-600 border-2 border-solid my-32'>
+            <div className='cta p-5 w-full border-red-700 border-2 border-solid my-32'>
               <h5 className='text-red-600 text-center uppercase'>see all projects</h5>
             </div>
           </Link>
 
           <Link to="/">
-            <div className='cta p-5 w-full mx-auto border-red-600 border-2 border-solid mb-32'>
+            <div className='cta p-5 w-full mx-auto border-red-700 border-2 border-solid mb-32'>
               <h5 className='text-red-600 text-center uppercase'>back to home</h5>
             </div>
           </Link>
