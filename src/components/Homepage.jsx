@@ -6,7 +6,7 @@ import {PlanetTheme} from "../PlanetThemeContext"
 
 function Homepage() {
   const {planet} = useContext(PlanetTheme)
-
+  console.log(planet.image)
   return (
     <div>
       {/* intro */}
@@ -120,7 +120,7 @@ function Homepage() {
       <div className='planet-info h-[50vh]'>
         <div className='relative overflow-x-clip h-48'>
           <div className='absolute w-1/3 -right-48'>
-            <img src='src/assets/img/mars-zoom.png'/>
+            <img src={`src/assets/img/${planet.image}-zoom.png`}/>
           </div>
         </div>
 

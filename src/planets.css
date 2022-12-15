@@ -1,6 +1,9 @@
 .mercuryOne {
     color: #C8C8C8;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-shadow:
+    0 0 10px #C8C8C8,
+    0 0 13px #C8C8C87e;
 }
 .mercuryTwo {
     color: #3C3C3C;
@@ -10,12 +13,18 @@
     border-style: solid;
     border-width: 1px;
     border-color: #C8C8C8;
-    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow:
+    0 0 10px #C8C8C8,
+    0 0 13px #C8C8C87e;
 }
 
 .venusOne {
     color: #FFE600;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-shadow:
+    0 0 10px #FFE600,
+    0 0 13px #FFE6007e;
 }
 .venusTwo {
     color: #E5BC96;
@@ -25,12 +34,18 @@
     border-style: solid;
     border-width: 1px;
     border-color: #FFE600;
-    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow:
+    0 0 10px #FFE600,
+    0 0 13px #FFE6007e;
 }
 
 .marsOne {
     color: #FF0000;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-shadow:
+    0 0 10px #FF0000,
+    0 0 13px #FF00007e;
 }
 .marsTwo {
     color: #FF7B00;
@@ -41,11 +56,17 @@
     border-width: 1px;
     border-color: #FF0000;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    box-shadow:
+    0 0 10px #FF0000,
+    0 0 13px #FF00007e;
 }
 
 .jupiterOne {
     color: #E74663;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-shadow:
+    0 0 10px #E74663,
+    0 0 13px #E746637e;
 }
 .jupiterTwo {
     color: #88ACB4;
@@ -56,26 +77,37 @@
     border-width: 1px;
     border-color: #E74663;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    box-shadow:
+    0 0 10px #E74663,
+    0 0 13px #E746637e;
 }
 
 .saturnOne {
     color: #B095A7;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-shadow:
+    0 0 10px #B095A7,
+    0 0 13px #B095A77e;
 }
 .saturnTwo {
-    color: #F3BF8E;
+    color: #f9b06a;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .saturnCta {
     border-style: solid;
     border-width: 1px;
     border-color: #B095A7;
-    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
-}
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow:
+    0 0 10px #B095A7,
+    0 0 13px #B095A77e;}
 
 .uranusOne {
     color: #00EFFE;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    text-shadow:
+    0 0 3px #00EFFE,
+    0 0 4px #00EFFE7e;
 }
 .uranusTwo {
     color: #C5F4FF;
@@ -85,12 +117,18 @@
     border-style: solid;
     border-width: 1px;
     border-color: #00EFFE;
-    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow:
+    0 0 10px #00EFFE,
+    0 0 13px #00EFFE7e;
 }
 
 .neptuneOne {
     color: #281E9A;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    text-shadow:
+    0 0 10px #281E9A,
+    0 0 13px #421e9acc;
 }
 .neptuneTwo {
     color: #3061E0;
@@ -100,5 +138,8 @@
     border-style: solid;
     border-width: 1px;
     border-color: #281E9A;
-    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow:
+    0 0 10px #281E9A,
+    0 0 13px #421e9acc;
 }

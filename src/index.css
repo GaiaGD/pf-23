@@ -10,7 +10,7 @@ html, body {
     position: relative;
     font-family: 'Archivo', sans-serif;
 }
-
+/* 
 .glow-mars-first {
     text-shadow:
         0 0 5px #ff0000,
@@ -21,8 +21,12 @@ html, body {
     text-shadow:
         0 0 5px #ff7b00,
         0 0 7px #ff7b0084;
-}
+} */
 
+.header {
+    backdrop-filter: blur(6px);
+    background-color: #00000037;
+}
 
 .wheelsapp-case-study {
     background-image: url('assets/img/projects/wheelsapp-bg.jpg');
