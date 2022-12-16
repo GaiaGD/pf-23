@@ -16,7 +16,7 @@ function Footer() {
                 <input type="text" className={`w-full my-2 p-3 bg-black ${planet.cta} hover:${planet.cta} focus:${planet.cta} active:${planet.cta}text-white`}></input>
                 <input type="email" className={`w-full my-2 p-3 bg-black ${planet.cta} hover:${planet.cta} focus:${planet.cta} active:${planet.cta}text-white`}></input>
                 <textarea type="text" className={`w-full my-2 p-3 bg-black ${planet.cta} hover:${planet.cta} focus:${planet.cta} active:${planet.cta}text-white`}></textarea>
-                <div className={`cta p-5 ${planet.cta} uppercase ${planet.first} text-center w-1/3`}>send</div>
+                <div className={`cta text-lg p-5 ${planet.cta} uppercase ${planet.first} text-center w-1/3`}>send</div>
               </form>
             </div>
             <div className='w-3-12 icons contact flex'>

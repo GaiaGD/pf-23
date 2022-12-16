@@ -27,7 +27,7 @@
     0 0 13px #FFE6007e;
 }
 .venusTwo {
-    color: #E5BC96;
+    color: #ae937a;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .venusCta {
@@ -48,7 +48,7 @@
     0 0 13px #FF00007e;
 }
 .marsTwo {
-    color: #FF7B00;
+    color: #ffb56f;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .marsCta {
@@ -69,7 +69,7 @@
     0 0 13px #E746637e;
 }
 .jupiterTwo {
-    color: #88ACB4;
+    color: #5e797f;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .jupiterCta {
@@ -83,34 +83,34 @@
 }
 
 .saturnOne {
-    color: #B095A7;
+    color: #f9b06a;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
     text-shadow:
-    0 0 10px #B095A7,
-    0 0 13px #B095A77e;
+    0 0 10px #f9b06a,
+    0 0 13px #f9b06a7e;
 }
 .saturnTwo {
-    color: #f9b06a;
+    color: #B095A7;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .saturnCta {
     border-style: solid;
     border-width: 1px;
-    border-color: #B095A7;
+    border-color: #f9b06a;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow:
-    0 0 10px #B095A7,
-    0 0 13px #B095A77e;}
+    0 0 10px #f9b06a,
+    0 0 13px #f9b06a7e;}
 
 .uranusOne {
     color: #00EFFE;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
     text-shadow:
-    0 0 3px #00EFFE,
-    0 0 4px #00EFFE7e;
+    0 0 10px #00EFFE,
+    0 0 13px #00EFFE7e;
 }
 .uranusTwo {
-    color: #C5F4FF;
+    color: #87a1a7;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
 }
 .uranusCta {
@@ -131,7 +131,7 @@
     0 0 13px #421e9acc;
 }
 .neptuneTwo {
-    color: #3061E0;
+    color: #384872;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
 }
 .neptuneCta {

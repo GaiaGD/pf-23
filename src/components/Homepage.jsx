@@ -20,7 +20,7 @@ function Homepage() {
                 className={`${planet.cta} p-5 ${planet.first} border-red-700 border-2 border-solid m-16 w-1/3`}
                 to="/#projects"
             >
-              <h5 className={`${planet.first} text-center`}>THINGS I'VE MADE</h5>
+              <h5 className={`${planet.first} text-lg text-center`}>THINGS I'VE MADE</h5>
             </HashLink>
         </div>
       </div>
@@ -39,17 +39,17 @@ function Homepage() {
             <div className='w-7/12 left-4'>
               <h2 className={`${planet.first} text-3xl uppercase`}>WHEELS APP</h2>
               <h5 className='text-lg my-2'>UI - UX, Development</h5>
-              <div className={`${planet.second}`}><span className='mr-8'>REACT.JS</span><span className='mr-8'>JAVASCRIPT</span><span>CSS</span></div>
-              <p className='my-8 text-base'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div className={`${planet.second}`}><span className='mr-8 text-lg'>REACT.JS</span><span className='mr-8 text-lg'>JAVASCRIPT</span><span className='text-lg'>CSS</span></div>
+              <p className='my-8 text-lg'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <div className='flex justify-between items-center'>
                 <div className='flex w-full'>
                   <Link to="/wheelsapp" className={`cta p-5 w-full ${planet.cta} mr-8`}>
                     <div>
-                      <h5 className={`${planet.first} text-center uppercase`}>view project</h5>
+                      <h5 className={`${planet.first} text-lg text-center uppercase`}>view project</h5>
                     </div>
                   </Link>
                   <div className={`cta p-5 w-full ${planet.cta}`}>
-                    <h5 className={`${planet.first} text-center uppercase`}>live site</h5>
+                    <h5 className={`${planet.first} text-lg text-center uppercase`}>live site</h5>
                   </div>
                 </div>
                 <div className='cta p-5'>
@@ -67,15 +67,15 @@ function Homepage() {
               <div className='w-7/12 flex flex-col'>
               <h2 className={`${planet.first} text-3xl uppercase`}>BOOKING</h2>
                 <h5 className='text-lg my-2'>UI - UX, Development</h5>
-                <div className={`${planet.second}`}><span className='mr-8'>REACT.JS</span><span className='mr-8'>JAVASCRIPT</span><span>CSS</span></div>
-                <p className='my-8 text-base'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div className={`${planet.second}`}><span className='mr-8 text-lg'>REACT.JS</span><span className='mr-8 text-lg'>JAVASCRIPT</span><span className='text-lg'>CSS</span></div>
+                <p className='my-8 text-lg'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <div className='flex justify-between items-center'>
                 <div className='flex w-full'>
                   <div className={`cta p-5 w-full ${planet.cta} mr-8`}>
-                    <h5 className={`${planet.first} text-center uppercase`}>view project</h5>
+                    <h5 className={`${planet.first} text-lg text-center uppercase`}>view project</h5>
                   </div>
                   <div className={`cta p-5 w-full ${planet.cta}`}>
-                    <h5 className={`${planet.first} text-center uppercase`}>live site</h5>
+                    <h5 className={`${planet.first} text-lg text-center uppercase`}>live site</h5>
                   </div>
                 </div>
                 <div className='cta p-5'>
@@ -89,7 +89,7 @@ function Homepage() {
 
         {/* see more CTA*/}
         <div className={`cta mx-auto my-32 p-5 ${planet.cta} w-1/3`}>
-        <h5 className={`${planet.first} text-center uppercase`}>See more</h5>
+        <h5 className={`${planet.first} text-lg text-center uppercase`}>See more</h5>
           </div>
       </div>
 
@@ -99,7 +99,7 @@ function Homepage() {
             <h1 className={`${planet.first} text-4xl text-right uppercase my-8`}>about me</h1>
             <h2 className='text-white text-3xl text-right'>Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip, space exploration, animal rescue & jiu-jitsu white belt ex ea commodo consequat.</h2>
             <div className={`cta p-5 ${planet.cta} my-16 w-1/3`}>
-              <h5 className={`${planet.first} text-center`}>DOWNLOAD RESUME / CV</h5>
+              <h5 className={`${planet.first} text-lg text-center`}>DOWNLOAD RESUME / CV</h5>
             </div>
         </div>
       </div>
