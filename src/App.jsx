@@ -8,7 +8,7 @@ import Footer from "./components/Footer"
 function App() {
 
   return (
-    <div className="App bg-black text-white">
+    <div className="App text-white">
       <Header />
 
       <Routes>

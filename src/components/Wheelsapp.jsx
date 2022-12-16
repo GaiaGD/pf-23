@@ -9,15 +9,15 @@ function Wheelsapp() {
       {/* intro */}
       <div className='intro mx-64'>
         <h5 className={`${planet.first} text-5xl`}>WHEELS APP</h5>
-        <p className='text-base my-16 leading-7'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally</p>
+        <p className='text-lg my-16 leading-7'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally</p>
       </div>
 
       <div className='flex w-2/6 ml-64'>
           <div className={`cta p-5 w-full ${planet.cta} mr-8`}>
-            <h5 className={`${planet.first} text-center uppercase`}>live site</h5>
+            <h5 className={`${planet.first} text-lg text-center uppercase`}>live site</h5>
           </div>
           <div className={`cta p-5 w-full ${planet.cta}`}>
-            <h5 className={`${planet.first} text-center uppercase`}>view on github</h5>
+            <h5 className={`${planet.first} text-lg text-center uppercase`}>view on github</h5>
           </div>
       </div>
 
@@ -40,12 +40,12 @@ function Wheelsapp() {
       {/* project info */}
       <div className='info mx-64'>
         <h5 className='text-xl font-semibold'>Title</h5>
-        <p className='text-base my-8 leading-7'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally</p>
+        <p className='text-lg my-8 leading-7'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally</p>
       </div>
 
       <div className='info mx-64'>
         <h5 className='text-xl font-semibold'>Title</h5>
-        <p className='text-base my-8 leading-7'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally</p>
+        <p className='text-lg my-8 leading-7'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally</p>
       </div>
 
       <div className="mx-64 flex items-center">
@@ -56,13 +56,13 @@ function Wheelsapp() {
         <div className='w-2/6 flex-col content-between'>
           <Link to="">
             <div className={`cta p-5 w-full ${planet.cta} my-32`}>
-              <h5 className={`${planet.first} text-center uppercase`}>see all projects</h5>
+              <h5 className={`${planet.first} text-lg text-center uppercase`}>see all projects</h5>
             </div>
           </Link>
 
           <Link to="/">
             <div className={`cta p-5 w-full mx-auto ${planet.cta} mb-32`}>
-              <h5 className={`${planet.first} text-center uppercase`}>back to home</h5>
+              <h5 className={`${planet.first} text-lg text-center uppercase`}>back to home</h5>
             </div>
           </Link>
         </div>

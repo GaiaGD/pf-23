@@ -10,18 +10,12 @@ html, body {
     position: relative;
     font-family: 'Archivo', sans-serif;
 }
-/* 
-.glow-mars-first {
-    text-shadow:
-        0 0 5px #ff0000,
-        0 0 7px #ff00007e;
+
+body {
+    background-image: url('assets/img/outerspace.jpg');
+    background-size: cover;
 }
 
-.glow-mars-second {
-    text-shadow:
-        0 0 5px #ff7b00,
-        0 0 7px #ff7b0084;
-} */
 
 .header {
     backdrop-filter: blur(6px);

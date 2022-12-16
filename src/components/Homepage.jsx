@@ -6,7 +6,6 @@ import {PlanetTheme} from "../PlanetThemeContext"
 
 function Homepage() {
   const {planet} = useContext(PlanetTheme)
-  console.log(planet.image)
   return (
     <div>
       {/* intro */}
