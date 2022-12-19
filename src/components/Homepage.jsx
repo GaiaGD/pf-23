@@ -6,11 +6,12 @@ import {PlanetTheme} from "../PlanetThemeContext"
 
 function Homepage() {
   const {planet} = useContext(PlanetTheme)
+
   return (
     <div>
       {/* intro */}
       <div className='flex justify-between items-center intro'>
-        <div className='mt-64 mb-32 mx-64 flex flex-col items-center'>
+        <div className='mt-64 mb-32 mx-32 flex flex-col items-center'>
             <h1 className={`${planet.second} text-6xl text-center`}>Lorem ipsum dolor sit amet, <span className={`${planet.first}`}>Designer & Front-end Developer</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
             <HashLink
                 smooth={true}
