@@ -9,6 +9,11 @@ function App() {
 
   return (
     <div className="App text-white">
+      <div className='background-container'>
+        <div class="depth"></div>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+      </div>
       <Header />
 
       <Routes>

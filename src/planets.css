@@ -18,6 +18,10 @@
     0 0 10px #C8C8C8,
     0 0 13px #C8C8C87e;
 }
+.mercuryGlow {
+    -webkit-filter: drop-shadow(0px 5px 14px #C8C8C8);
+    filter: drop-shadow(0px 5px 14px #C8C8C8);
+}
 
 .venusOne {
     color: #FFE600;
@@ -38,6 +42,10 @@
     box-shadow:
     0 0 10px #FFE600,
     0 0 13px #FFE6007e;
+}
+.venusGlow {
+    -webkit-filter: drop-shadow(0px 5px 14px #FFE600);
+    filter: drop-shadow(0px 5px 14px #FFE600);
 }
 
 .marsOne {
@@ -60,6 +68,10 @@
     0 0 10px #FF0000,
     0 0 13px #FF00007e;
 }
+.marsGlow {
+    -webkit-filter: drop-shadow(0px 5px 14px #ff0000);
+    filter: drop-shadow(0px 5px 14px #ff0000);
+}
 
 .jupiterOne {
     color: #E74663;
@@ -80,6 +92,10 @@
     box-shadow:
     0 0 10px #E74663,
     0 0 13px #E746637e;
+}
+.jupitersGlow {
+    -webkit-filter: drop-shadow(0px 5px 14px #ff0000);
+    filter: drop-shadow(0px 5px 14px #ff0000);
 }
 
 .saturnOne {
@@ -102,6 +118,11 @@
     0 0 10px #f9b06a,
     0 0 13px #f9b06a7e;}
 
+.saturnGlow {
+    -webkit-filter: drop-shadow(0px 5px 14px #ff0000);
+    filter: drop-shadow(0px 5px 14px #ff0000);
+}
+
 .uranusOne {
     color: #00EFFE;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
@@ -121,6 +142,10 @@
     box-shadow:
     0 0 10px #00EFFE,
     0 0 13px #00EFFE7e;
+}
+.uranusGlow {
+    -webkit-filter: drop-shadow(0px 5px 14px #ff0000);
+    filter: drop-shadow(0px 5px 14px #ff0000);
 }
 
 .neptuneOne {
@@ -142,4 +167,8 @@
     box-shadow:
     0 0 10px #281E9A,
     0 0 13px #421e9acc;
+}
+.neptuneGlow {
+    -webkit-filter: drop-shadow(0px 5px 14px #ff0000);
+    filter: drop-shadow(0px 5px 14px #ff0000);
 }

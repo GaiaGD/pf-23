@@ -6,30 +6,31 @@ import {PlanetTheme} from "../PlanetThemeContext"
 function Header() {
 
     const {planet, togglePlanet} = useContext(PlanetTheme)
+    console.log(planet)
 
     return (
         <div className='header sticky top-0 z-50 border-b-[0.1px] border-white-100 border-opacity-20 flex justify-between items-center bg-black-200'>
             <div className='header-planets flex items-center max-w-xl m-5'>
                 <div className="mr-14" id='mercury' onClick={() => togglePlanet("mercury")}>
-                    <img className="w-full" src='src/assets/img/mercury.png'/>
+                    <img className='w-full' src='src/assets/img/mercury.png'/>
                 </div>
                 <div className="mr-14" id='venus' onClick={() => togglePlanet("venus")}>
-                    <img src='src/assets/img/venus.png'/>
+                    <img className='w-full' src='src/assets/img/venus.png'/>
                 </div>
                 <div className="mr-14" id='mars' onClick={() => togglePlanet("mars")}>
-                    <img src='src/assets/img/mars.png'/>
+                    <img className='w-full' src='src/assets/img/mars.png'/>
                 </div>
                 <div className="mr-8" id='jupiter' onClick={() => togglePlanet("jupiter")}>
-                    <img className="w-full" src='src/assets/img/jupiter.png'/>
+                    <img className='w-full' src='src/assets/img/jupiter.png'/>
                 </div>
                 <div className="mr-8" id='saturn' onClick={() => togglePlanet("saturn")}>
-                    <img src='src/assets/img/saturn.png'/>
+                    <img className='w-full' src='src/assets/img/saturn.png'/>
                 </div>
                 <div className="mr-14" id='uranus' onClick={() => togglePlanet("uranus")}>
-                    <img src='src/assets/img/uranus.png'/>
+                    <img className='w-full' src='src/assets/img/uranus.png'/>
                 </div>
                 <div className="mr-14" id='neptune' onClick={() => togglePlanet("neptune")}>
-                    <img src='src/assets/img/neptune.png'/>
+                    <img className='w-full' src='src/assets/img/neptune.png'/>
                 </div>
             </div>
             <div className='flex max-w-lg'>

@@ -6,20 +6,21 @@
 html, body {
     height: 100%;
     overscroll-behavior: auto;
-    background: #000000;
     position: relative;
     font-family: 'Archivo', sans-serif;
 }
 
-body {
-    background-image: url('assets/img/outerspace.jpg');
-    background-size: cover;
-}
-
-
 .header {
     backdrop-filter: blur(6px);
     background-color: #00000037;
+}
+
+.header-planets img {
+    transition: transform .3s; /* Animation */
+}
+
+.header-planets img:hover {
+    transform: scale(1.2);
 }
 
 .wheelsapp-case-study {

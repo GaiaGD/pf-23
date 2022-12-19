@@ -11,8 +11,10 @@ function PlanetThemeContextProvider(props){
             first: [`${name}One`],
             second: [`${name}Two`],
             cta: [`${name}Cta`],
-            image: [`${name}`]
+            image: [`${name}`],
+            selected: true
         }))
+
     }
 
     return (
