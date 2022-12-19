@@ -3,16 +3,16 @@ const PlanetTheme = React.createContext()
 
 function PlanetThemeContextProvider(props){
     // default mars for now
-    const [planet, setPlanet] = React.useState({first: "marsOne", second: "marsTwo", cta: "marsCta", image: "mars"})
+    const [planet, setPlanet] = React.useState({selected: "mars", first: "marsOne", second: "marsTwo", cta: "marsCta", image: "mars"})
 
     function togglePlanet(name){
         setPlanet(prevState => ({
             ...prevState,
+            selected: [`${name}`],
             first: [`${name}One`],
             second: [`${name}Two`],
             cta: [`${name}Cta`],
-            image: [`${name}`],
-            selected: true
+            image: [`${name}`]
         }))
 
     }

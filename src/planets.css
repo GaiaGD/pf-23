@@ -93,9 +93,9 @@
     0 0 10px #E74663,
     0 0 13px #E746637e;
 }
-.jupitersGlow {
-    -webkit-filter: drop-shadow(0px 5px 14px #ff0000);
-    filter: drop-shadow(0px 5px 14px #ff0000);
+.jupiterGlow {
+    -webkit-filter: drop-shadow(0px 5px 14px #E74663);
+    filter: drop-shadow(0px 5px 14px #E74663);
 }
 
 .saturnOne {
@@ -119,8 +119,8 @@
     0 0 13px #f9b06a7e;}
 
 .saturnGlow {
-    -webkit-filter: drop-shadow(0px 5px 14px #ff0000);
-    filter: drop-shadow(0px 5px 14px #ff0000);
+    -webkit-filter: drop-shadow(0px 5px 14px #f9b06a);
+    filter: drop-shadow(0px 5px 14px #f9b06a);
 }
 
 .uranusOne {
@@ -144,8 +144,8 @@
     0 0 13px #00EFFE7e;
 }
 .uranusGlow {
-    -webkit-filter: drop-shadow(0px 5px 14px #ff0000);
-    filter: drop-shadow(0px 5px 14px #ff0000);
+    -webkit-filter: drop-shadow(0px 5px 14px #00EFFE);
+    filter: drop-shadow(0px 5px 14px #00EFFE);
 }
 
 .neptuneOne {
@@ -169,6 +169,6 @@
     0 0 13px #421e9acc;
 }
 .neptuneGlow {
-    -webkit-filter: drop-shadow(0px 5px 14px #ff0000);
-    filter: drop-shadow(0px 5px 14px #ff0000);
+    -webkit-filter: drop-shadow(0px 9px 6px #4f4ad4);
+    filter: drop-shadow(0px 9px 6px #4f4ad4);
 }

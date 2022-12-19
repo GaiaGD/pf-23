@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App text-white">
       <div className='background-container'>
-        <div class="depth"></div>
-        <div class="stars"></div>
-        <div class="twinkling"></div>
+        <div className="depth"></div>
+        <div className="stars"></div>
+        <div className="twinkling"></div>
       </div>
       <Header />
 

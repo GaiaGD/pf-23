@@ -6,31 +6,31 @@ import {PlanetTheme} from "../PlanetThemeContext"
 function Header() {
 
     const {planet, togglePlanet} = useContext(PlanetTheme)
-    console.log(planet)
+    console.log(planet.selected)
 
     return (
         <div className='header sticky top-0 z-50 border-b-[0.1px] border-white-100 border-opacity-20 flex justify-between items-center bg-black-200'>
             <div className='header-planets flex items-center max-w-xl m-5'>
-                <div className="mr-14" id='mercury' onClick={() => togglePlanet("mercury")}>
-                    <img className='w-full' src='src/assets/img/mercury.png'/>
+                <div className='mr-14' id='mercury' onClick={(e) => togglePlanet(e.currentTarget.id)}>
+                    <img className={planet.selected == 'mercury' ? "mercuryGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/mercury.png'/>
                 </div>
-                <div className="mr-14" id='venus' onClick={() => togglePlanet("venus")}>
-                    <img className='w-full' src='src/assets/img/venus.png'/>
+                <div className="mr-14" id='venus' onClick={(e) => togglePlanet(e.currentTarget.id)}>
+                    <img className={planet.selected == 'venus' ? "venusGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/venus.png'/>
                 </div>
-                <div className="mr-14" id='mars' onClick={() => togglePlanet("mars")}>
-                    <img className='w-full' src='src/assets/img/mars.png'/>
+                <div className="mr-14" id='mars' onClick={(e) => togglePlanet(e.currentTarget.id)}>
+                    <img className={planet.selected == 'mars' ? "marsGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/mars.png'/>
                 </div>
-                <div className="mr-8" id='jupiter' onClick={() => togglePlanet("jupiter")}>
-                    <img className='w-full' src='src/assets/img/jupiter.png'/>
+                <div className="mr-8" id='jupiter' onClick={(e) => togglePlanet(e.currentTarget.id)}>
+                    <img className={planet.selected == 'jupiter' ? "jupiterGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/jupiter.png'/>
                 </div>
-                <div className="mr-8" id='saturn' onClick={() => togglePlanet("saturn")}>
-                    <img className='w-full' src='src/assets/img/saturn.png'/>
+                <div className="mr-8" id='saturn' onClick={(e) => togglePlanet(e.currentTarget.id)}>
+                    <img className={planet.selected == 'saturn' ? "saturnGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/saturn.png'/>
                 </div>
-                <div className="mr-14" id='uranus' onClick={() => togglePlanet("uranus")}>
-                    <img className='w-full' src='src/assets/img/uranus.png'/>
+                <div className="mr-14" id='uranus' onClick={(e) => togglePlanet(e.currentTarget.id)}>
+                    <img className={planet.selected == 'uranus' ? "uranusGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/uranus.png'/>
                 </div>
-                <div className="mr-14" id='neptune' onClick={() => togglePlanet("neptune")}>
-                    <img className='w-full' src='src/assets/img/neptune.png'/>
+                <div className="mr-14" id='neptune' onClick={(e) => togglePlanet(e.currentTarget.id)}>
+                    <img className={planet.selected == 'neptune' ? "neptuneGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/neptune.png'/>
                 </div>
             </div>
             <div className='flex max-w-lg'>

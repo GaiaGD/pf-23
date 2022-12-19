@@ -23,6 +23,10 @@ html, body {
     transform: scale(1.2);
 }
 
+.selectedZoom {
+    transform: scale(1.3);
+}
+
 .wheelsapp-case-study {
     background-image: url('assets/img/projects/wheelsapp-bg.jpg');
     background-size: cover;
