@@ -5,35 +5,38 @@ import {PlanetTheme} from "../PlanetThemeContext"
 
 function Header() {
 
+    const planets = ['mercury', 'venus', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune']
+
     const {planet, togglePlanet} = useContext(PlanetTheme)
-    console.log(planet.selected)
+
+    const planetsThemes = planets.map(globe => {
+        if (globe == planet.selected){
+            return (
+                <div className="mr-16" key={globe} id={globe} onClick={(e) => togglePlanet(e.currentTarget.id)}>
+                    <img className={`${globe}Glow w-full selectedZoom`} src={`src/assets/img/${globe}.png`}/>
+                </div>)
+        } else {
+            return (
+                <div className='mr-16' key={globe} id={globe} onClick={(e) => togglePlanet(e.currentTarget.id)}>
+                    <img className="w-full opacity-30" src={`src/assets/img/${globe}.png`}/>
+                </div>
+            )
+        }
+    })
 
     return (
         <div className='header sticky top-0 z-50 border-b-[0.1px] border-white-100 border-opacity-20 flex justify-between items-center bg-black-200'>
-            <div className='header-planets flex items-center max-w-xl m-5'>
-                <div className='mr-14' id='mercury' onClick={(e) => togglePlanet(e.currentTarget.id)}>
-                    <img className={planet.selected == 'mercury' ? "mercuryGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/mercury.png'/>
+
+            <div className='max-w-xl m-8 mb-0'>
+                <div className='header-planets flex items-center'>
+                    {planetsThemes}
                 </div>
-                <div className="mr-14" id='venus' onClick={(e) => togglePlanet(e.currentTarget.id)}>
-                    <img className={planet.selected == 'venus' ? "venusGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/venus.png'/>
-                </div>
-                <div className="mr-14" id='mars' onClick={(e) => togglePlanet(e.currentTarget.id)}>
-                    <img className={planet.selected == 'mars' ? "marsGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/mars.png'/>
-                </div>
-                <div className="mr-8" id='jupiter' onClick={(e) => togglePlanet(e.currentTarget.id)}>
-                    <img className={planet.selected == 'jupiter' ? "jupiterGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/jupiter.png'/>
-                </div>
-                <div className="mr-8" id='saturn' onClick={(e) => togglePlanet(e.currentTarget.id)}>
-                    <img className={planet.selected == 'saturn' ? "saturnGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/saturn.png'/>
-                </div>
-                <div className="mr-14" id='uranus' onClick={(e) => togglePlanet(e.currentTarget.id)}>
-                    <img className={planet.selected == 'uranus' ? "uranusGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/uranus.png'/>
-                </div>
-                <div className="mr-14" id='neptune' onClick={(e) => togglePlanet(e.currentTarget.id)}>
-                    <img className={planet.selected == 'neptune' ? "neptuneGlow w-full selectedZoom" : "w-full opacity-30"} src='src/assets/img/neptune.png'/>
+                <div className='whatPlanet mt-5 mb-5 flex'>
+                    <p className='capitalize text-sm tracking-wider'><span className='opacity-50 pr-1'>You are on </span>{planet.selected}</p>
                 </div>
             </div>
-            <div className='flex max-w-lg'>
+
+            <div className='flex max-w-lg m-8'>
                 <Link
                     smooth={true}
                     offset={-70}
@@ -66,9 +69,6 @@ function Header() {
                     to="/#contacts">
                     <h2 className='text-white text-lg'>CONTACT</h2>
                 </Link>
-                {/* <div className='w-32'>
-                    <h2 className='text-white text-lg'>CONTACT</h2>
-                </div> */}
             </div>
         </div>
     )
