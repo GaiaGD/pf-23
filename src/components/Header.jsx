@@ -27,16 +27,16 @@ function Header() {
     return (
         <div className='header sticky top-0 z-50 border-b-[0.1px] border-white-100 border-opacity-20 md:flex justify-between items-center bg-black-200'>
 
-            <div className='md:max-w-xl md:m-8 m-4 mb-0'>
+            <div className='md:max-w-xl md:mt-8 md:mx-4 mb-2'>
                 <div className='header-planets flex items-center'>
                     {planetsThemes}
                 </div>
-                <div className='whatPlanet mt-5 mb-5 flex'>
+                <div className='whatPlanet mt-5 mb-1 flex'>
                     <p className='capitalize text-sm tracking-wider'>You are on {planet.selected}</p>
                 </div>
             </div>
 
-            <div className='flex max-w-lg m-8'>
+            <div className='flex max-w-lg md:m-8 m-2'>
                 <Link
                     smooth={true}
                     offset={-70}
