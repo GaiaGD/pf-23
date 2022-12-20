@@ -12,12 +12,12 @@ function Header() {
     const planetsThemes = planets.map(globe => {
         if (globe == planet.selected){
             return (
-                <div className="mr-16" key={globe} id={globe} onClick={(e) => togglePlanet(e.currentTarget.id)}>
+                <div className="md:mr-16 mr-6" key={globe} id={globe} onClick={(e) => togglePlanet(e.currentTarget.id)}>
                     <img className={`${globe}Glow w-full selectedZoom`} src={`src/assets/img/${globe}.png`}/>
                 </div>)
         } else {
             return (
-                <div className='mr-16' key={globe} id={globe} onClick={(e) => togglePlanet(e.currentTarget.id)}>
+                <div className='md:mr-16 mr-6' key={globe} id={globe} onClick={(e) => togglePlanet(e.currentTarget.id)}>
                     <img className="w-full opacity-30" src={`src/assets/img/${globe}.png`}/>
                 </div>
             )
@@ -25,14 +25,14 @@ function Header() {
     })
 
     return (
-        <div className='header sticky top-0 z-50 border-b-[0.1px] border-white-100 border-opacity-20 flex justify-between items-center bg-black-200'>
+        <div className='header sticky top-0 z-50 border-b-[0.1px] border-white-100 border-opacity-20 md:flex justify-between items-center bg-black-200'>
 
-            <div className='max-w-xl m-8 mb-0'>
+            <div className='md:max-w-xl md:m-8 m-4 mb-0'>
                 <div className='header-planets flex items-center'>
                     {planetsThemes}
                 </div>
                 <div className='whatPlanet mt-5 mb-5 flex'>
-                    <p className='capitalize text-sm tracking-wider'><span className='opacity-50 pr-1'>You are on </span>{planet.selected}</p>
+                    <p className='capitalize text-sm tracking-wider'>You are on {planet.selected}</p>
                 </div>
             </div>
 

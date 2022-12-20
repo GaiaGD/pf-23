@@ -15,11 +15,12 @@ html, body {
     background-color: #00000037;
 }
 
-#saturn, #jupiter {
-    margin-right: 2rem;
+@media screen and (min-width: 768px) {
+    #saturn, #jupiter {
+        margin-right: 2rem;
+    }
 }
-
-#neptune {
+#saturn, #jupiter, #neptune {
     margin-right: 0;
 }
 
