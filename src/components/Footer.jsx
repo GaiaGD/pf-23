@@ -9,7 +9,7 @@ function Footer() {
         <div className='flex-col justify-between'>
           <h1 className={`${planet.first} md:text-4xl text-lg uppercase mb-8`}>get in touch</h1>
           <div className='md:flex justify-between items-end'>
-            <div className='md:w-6/12 mb-4'>
+            <div className='md:w-6/12 mb-4`'>
               <h2 className='text-white md:text-2xl text-xl mb-4'>Get in touch or shoot me an email directly on <span className={`${planet.second}`}>hi.gaiadg@gmail.com</span></h2>
               <form className="flex-col">
               {/* MISSING: focus:ring-red-600  */}
