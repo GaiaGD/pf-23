@@ -32,7 +32,7 @@ function Homepage() {
         </div>
         <div className='flex-col'>
           {/* wheels app */}
-          <div className='project md:flex text-white md:mb-40 mb-16 items-center md:w-11/12 w-full'>
+          <div className='project md:flex text-white md:mb-40 mb-16 items-center w-full'>
             <div className='thumb md:w-5/12 w-full'>
               <img className='w-full' src='src/assets/img/thumb-wheels-app.svg'></img>
             </div>
@@ -41,14 +41,14 @@ function Homepage() {
               <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
               <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
               <p className='my-8 md:text-lg text-md'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between items-center w-8/12'>
                 <div className='md:flex w-full'>
-                  <div className={`cta md:mb-0 mb-3 md:p-5 p-3 w-full ${planet.cta} mr-8`}>
+                  <div className={`cta md:mb-0 mb-3 md:p-5 p-3 w-full ${planet.cta}2 mr-8`}>
                     <Link to="/wheelsapp">
                         <h5 className={`${planet.first} md:text-lg text-sm text-center uppercase`}>view project</h5>
                     </Link>
                   </div>
-                  <div className={`cta md:p-5 p-3 w-full ${planet.cta}`}>
+                  <div className={`cta md:p-5 p-3 w-full ${planet.cta}2`}>
                     <h5 className={`${planet.first} md:text-lg text-sm text-center uppercase`}>live site</h5>
                   </div>
                 </div>
@@ -59,29 +59,29 @@ function Homepage() {
             </div>
           </div>
           {/* booking */}
-          <div className='project md:flex text-white md:mb-40 mb-16 justify-end'>
-            <div className='md:w-11/12 w-full md:flex items-center'>
-              <div className='thumb md:w-5/12 w-full'>
-                <img className='w-full' src='src/assets/img/thumb-wheels-app.svg'></img>
-              </div>
-              <div className='md:w-7/12 flex flex-col'>
+          <div className='project md:flex text-white md:mb-40 mb-16 items-center w-full'>
+            <div className='thumb md:w-5/12 w-full'>
+              <img className='w-full' src='src/assets/img/thumb-wheels-app.svg'></img>
+            </div>
+            <div className='mb:w-7/12 left-4'>
               <h2 className={`${planet.first} md:text-3xl text-xl uppercase`}>BOOKING</h2>
-                <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
-                <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
-                <p className='my-8 md:text-lg text-md'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div className='flex justify-between items-center'>
+              <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
+              <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
+              <p className='my-8 md:text-lg text-md'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div className='flex justify-between items-center w-8/12'>
                 <div className='md:flex w-full'>
-                  <div className={`cta md:mb-0 mb-3 md:p-5 p-3 w-full ${planet.cta} mr-8`}>
-                    <h5 className={`${planet.first} md:text-lg text-sm text-center uppercase`}>view project</h5>
+                  <div className={`cta md:mb-0 mb-3 md:p-5 p-3 w-full ${planet.cta}2 mr-8`}>
+                    <Link to="/wheelsapp">
+                        <h5 className={`${planet.first} md:text-lg text-sm text-center uppercase`}>view project <span className="arrow right"></span></h5>
+                    </Link>
                   </div>
-                  <div className={`cta md:p-5 p-3 w-full ${planet.cta}`}>
+                  <div className={`cta md:p-5 p-3 w-full ${planet.cta}2`}>
                     <h5 className={`${planet.first} md:text-lg text-sm text-center uppercase`}>live site</h5>
                   </div>
                 </div>
                 <div className='cta p-5 hidden md:block'>
                   <img src='src/assets/img/github-repo.svg'/>
                 </div>
-              </div>
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@ function Homepage() {
 
         <div className='relative w-full'>
           <div className='absolute right-1/4 left-1/4 w-2/4'>
-            <h2 className={`text-right text-xl ${planet.second}`}>Mars can have huge dust storms which last for months and can cover the entire planet</h2>
+            <h2 className={`text-right text-xl ${planet.selected}`}>Mars can have huge dust storms which last for months and can cover the entire planet</h2>
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ function Header() {
     return (
         <div className='header sticky top-0 z-50 border-b-[0.1px] border-white-100 border-opacity-20 md:flex justify-between items-center bg-black-200'>
 
-            <div className='md:max-w-xl md:mt-8 md:mx-4 mb-2'>
+            <div className='md:max-w-xl md:mt-8 md:mx-8 mb-2'>
                 <div className='header-planets flex items-center'>
                     {planetsThemes}
                 </div>

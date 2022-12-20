@@ -68,7 +68,7 @@ function Wheelsapp() {
         </div>
 
         <div className='w-2/6 flex justify-start'>
-          <div className="arrow right"></div>
+          <div className="arrow mercuryTwo right"></div>
         </div>
       </div>
 
