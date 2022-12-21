@@ -32,7 +32,7 @@ function Header() {
                     {planetsThemes}
                 </div>
                 <div className='whatPlanet mt-5 mb-1 flex'>
-                    <p className='capitalize text-sm tracking-wider'>You are on {planet.selected}</p>
+                    <p className='uppercase text-sm tracking-wider opacity-50 font-light'>YOU ARE ON {planet.selected}</p>
                 </div>
             </div>
 

@@ -6,7 +6,6 @@ import {PlanetTheme} from "../PlanetThemeContext"
 
 function Homepage() {
   const {planet} = useContext(PlanetTheme)
-
   return (
     <div>
       {/* */}
@@ -41,19 +40,16 @@ function Homepage() {
               <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
               <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
               <p className='my-8 md:text-lg text-md'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div className='flex justify-between items-center w-8/12'>
+              <div className='flex justify-between items-center w-9/12'>
                 <div className='md:flex w-full'>
-                  <div className={`cta md:mb-0 mb-3 md:p-5 p-3 w-full ${planet.cta}2 mr-8`}>
+                  <div className={`cta md:mb-0 mb-3 md:py-5 py-3 w-full mr-8`}>
                     <Link to="/wheelsapp">
-                        <h5 className={`${planet.first} md:text-lg text-sm text-center uppercase`}>view project</h5>
+                      <h5 className={`${planet.first} md:text-lg text-sm uppercase`}>view project <span className={`arrow-hp ${planet.border} ml-2 right`}></span></h5>
                     </Link>
                   </div>
-                  <div className={`cta md:p-5 p-3 w-full ${planet.cta}2`}>
-                    <h5 className={`${planet.first} md:text-lg text-sm text-center uppercase`}>live site</h5>
+                  <div className={`cta md:p-5 p-3 w-full`}>
+                    <h5 className={`${planet.first} md:text-lg text-sm uppercase`}>live site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
                   </div>
-                </div>
-                <div className='cta p-5 hidden md:block'>
-                  <img src='src/assets/img/github-repo.svg'/>
                 </div>
               </div>
             </div>
@@ -68,19 +64,16 @@ function Homepage() {
               <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
               <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
               <p className='my-8 md:text-lg text-md'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div className='flex justify-between items-center w-8/12'>
+              <div className='flex justify-between items-center w-9/12'>
                 <div className='md:flex w-full'>
-                  <div className={`cta md:mb-0 mb-3 md:p-5 p-3 w-full ${planet.cta}2 mr-8`}>
+                  <div className={`cta md:mb-0 mb-3 md:py-5 py-3 w-full mr-8`}>
                     <Link to="/wheelsapp">
-                        <h5 className={`${planet.first} md:text-lg text-sm text-center uppercase`}>view project <span className="arrow right"></span></h5>
+                        <h5 className={`${planet.first} md:text-lg text-sm uppercase`}>view project <span className={`arrow-hp ${planet.border} ml-2 right`}></span></h5>
                     </Link>
                   </div>
-                  <div className={`cta md:p-5 p-3 w-full ${planet.cta}2`}>
-                    <h5 className={`${planet.first} md:text-lg text-sm text-center uppercase`}>live site</h5>
+                  <div className={`cta md:p-5 p-3 w-full`}>
+                    <h5 className={`${planet.first} md:text-lg text-sm uppercase`}>live site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
                   </div>
-                </div>
-                <div className='cta p-5 hidden md:block'>
-                  <img src='src/assets/img/github-repo.svg'/>
                 </div>
               </div>
             </div>
@@ -120,13 +113,13 @@ function Homepage() {
       <div className='planet-info h-[50vh]'>
         <div className='relative overflow-x-clip h-48'>
           <div className='absolute w-1/3 -right-48'>
-            <img src={`src/assets/img/${planet.image}-zoom.png`}/>
+            <img src={`src/assets/img/${planet.selected}-zoom.png`}/>
           </div>
         </div>
 
         <div className='relative w-full'>
           <div className='absolute right-1/4 left-1/4 w-2/4'>
-            <h2 className={`text-right text-xl ${planet.selected}`}>Mars can have huge dust storms which last for months and can cover the entire planet</h2>
+            <h2 className={`text-right text-xl ${planet.second}`}>Mars can have huge dust storms which last for months and can cover the entire planet</h2>
           </div>
         </div>
       </div>
