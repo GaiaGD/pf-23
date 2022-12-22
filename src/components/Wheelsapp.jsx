@@ -13,11 +13,11 @@ function Wheelsapp() {
       </div>
 
       <div className='flex w-2/6 ml-64'>
-          <div className={`cta p-5 w-full ${planet.cta} mr-8`}>
-            <h5 className={`${planet.first} text-lg text-center uppercase`}>live site</h5>
+          <div className={`p-5 w-full mr-8`}>
+            <h5 className={`${planet.first} text-lg text-center uppercase`}>live site <span className={`arrow-hp ${planet.border} ml-2 newTab`}></span></h5>
           </div>
-          <div className={`cta p-5 w-full ${planet.cta}`}>
-            <h5 className={`${planet.first} text-lg text-center uppercase`}>view on github</h5>
+          <div className={`cta p-5 w-full`}>
+            <h5 className={`${planet.first} text-lg text-center uppercase`}>view on github <span className={`arrow-hp ${planet.border} ml-2 right`}></span></h5>
           </div>
       </div>
 

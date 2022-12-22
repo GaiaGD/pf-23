@@ -40,7 +40,7 @@ function Homepage() {
               <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
               <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
               <p className='my-8 md:text-lg text-md'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div className='flex justify-between items-center md:w-9/12 w-full'>
+              <div className='flex justify-between items-center md:w-8/12 w-full'>
                 <div className='md:flex w-full'>
                   <div className={`cta md:mb-0 mb-3 md:py-5 py-3 w-full mr-8`}>
                     <Link to="/wheelsapp">
@@ -64,7 +64,7 @@ function Homepage() {
               <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
               <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
               <p className='my-8 md:text-lg text-md'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div className='flex justify-between items-center md:w-9/12 w-full'>
+              <div className='flex justify-between items-center md:w-8/12 w-full'>
                 <div className='md:flex w-full'>
                   <div className={`cta md:mb-0 mb-3 md:py-5 py-3 w-full mr-8`}>
                     <Link to="/wheelsapp">

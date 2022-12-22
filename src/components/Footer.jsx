@@ -22,12 +22,12 @@ function Footer() {
             <div className='md:w-6/12 mt-8 md:mb-0 mb-8 icons contact flex md:justify-end justify-center'>
               <div className='linkedin mr-16'>
                 <a target="_blank" className='' href="https://www.linkedin.com/in/gaia-di-gregorio-bb966044/">
-                  <img className="h-16" src='src/assets/img/contact/linkedin.svg'/>
+                  <img className="md:h-16 h-10" src='src/assets/img/contact/linkedin.svg'/>
                 </a>
               </div>
               <div className='github'>
                 <a target="_blank" className='' href="https://github.com/gaiagd">
-                  <img className="h-16" src='src/assets/img/contact/github.svg'/>
+                  <img className="md:h-16 h-10" src='src/assets/img/contact/github.svg'/>
                 </a>
               </div>
             </div>
