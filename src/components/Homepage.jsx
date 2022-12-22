@@ -40,15 +40,15 @@ function Homepage() {
               <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
               <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
               <p className='my-8 md:text-lg text-md'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div className='flex justify-between items-center w-9/12'>
+              <div className='flex justify-between items-center md:w-9/12 w-full'>
                 <div className='md:flex w-full'>
                   <div className={`cta md:mb-0 mb-3 md:py-5 py-3 w-full mr-8`}>
                     <Link to="/wheelsapp">
-                      <h5 className={`${planet.first} md:text-lg text-sm uppercase`}>view project <span className={`arrow-hp ${planet.border} ml-2 right`}></span></h5>
+                        <h5 className={`${planet.first} md:text-lg text-sm uppercase md:text-left text-center`}>view project <span className={`arrow-hp ${planet.border} ml-2 right`}></span></h5>
                     </Link>
                   </div>
                   <div className={`cta md:p-5 p-3 w-full`}>
-                    <h5 className={`${planet.first} md:text-lg text-sm uppercase`}>live site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
+                    <h5 className={`${planet.first} md:text-lg text-sm uppercase md:text-left text-center`}>live site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
                   </div>
                 </div>
               </div>
@@ -64,15 +64,15 @@ function Homepage() {
               <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
               <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
               <p className='my-8 md:text-lg text-md'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div className='flex justify-between items-center w-9/12'>
+              <div className='flex justify-between items-center md:w-9/12 w-full'>
                 <div className='md:flex w-full'>
                   <div className={`cta md:mb-0 mb-3 md:py-5 py-3 w-full mr-8`}>
                     <Link to="/wheelsapp">
-                        <h5 className={`${planet.first} md:text-lg text-sm uppercase`}>view project <span className={`arrow-hp ${planet.border} ml-2 right`}></span></h5>
+                      <h5 className={`${planet.first} md:text-lg text-sm uppercase md:text-left text-center`}>view project <span className={`arrow-hp ${planet.border} ml-2 right`}></span></h5>
                     </Link>
                   </div>
                   <div className={`cta md:p-5 p-3 w-full`}>
-                    <h5 className={`${planet.first} md:text-lg text-sm uppercase`}>live site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
+                    <h5 className={`${planet.first} md:text-lg text-sm uppercase md:text-left text-center`}>live site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
                   </div>
                 </div>
               </div>
@@ -118,14 +118,15 @@ function Homepage() {
         </div>
 
         <div className='relative w-full h-48 flex'>
-          <div className="scroll-container border-t-[0.1px] border-b-[0.1px] border-slate-400 border-solid py-3 w-full">
+          {/* scroll to be fixed */}
+          {/* <div className="scroll-container border-t-[0.1px] border-b-[0.1px] border-slate-400 border-solid py-3 w-full">
             <div className="scroll-text">
                 <h2 className='text-xl font-light'>Mars can have huge dust storms which last for months and can cover the entire planet. Mars has 2 moons called Deimos and Phobos. They are named after the two horses that pull the Roman god of war, Mars’, chariot. They may be asteroids captured by Mars’ gravity.</h2>
             </div>
-          </div>
-          {/* <div className='absolute right-1/4 left-1/4 w-2/4'>
-            <h2 className={`text-right text-xl font-light ${planet.second}`}>Mars can have huge dust storms which last for months and can cover the entire planet</h2>
           </div> */}
+          <div className='absolute right-1/4 left-1/4 w-2/4'>
+            <h2 className={`text-right text-xl font-light ${planet.second}`}>Mars can have huge dust storms which last for months and can cover the entire planet</h2>
+          </div>
         </div>
       </div>
 
