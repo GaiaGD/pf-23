@@ -13,9 +13,9 @@ function Footer() {
               <h2 className='text-white md:text-2xl text-md mb-4'>Get in touch or shoot me an email directly on <span className={`${planet.second}`}>hi.gaiadg@gmail.com</span></h2>
               <form className="flex-col">
               {/* MISSING: focus:ring-red-600  */}
-                <input type="text" className={`w-full my-2 p-3 bg-black ${planet.cta} hover:${planet.cta} focus:${planet.cta} active:${planet.cta}text-white`}></input>
-                <input type="email" className={`w-full my-2 p-3 bg-black ${planet.cta} hover:${planet.cta} focus:${planet.cta} active:${planet.cta}text-white`}></input>
-                <textarea type="text" className={`w-full my-2 p-3 bg-black ${planet.cta} hover:${planet.cta} focus:${planet.cta} active:${planet.cta}text-white`}></textarea>
+                <input type="text" placeholder='Name' className={`w-full my-2 p-3 bg-black ${planet.cta} hover:${planet.cta} focus:${planet.cta} active:${planet.cta}text-white`}></input>
+                <input type="email" placeholder='Email' className={`w-full my-2 p-3 bg-black ${planet.cta} hover:${planet.cta} focus:${planet.cta} active:${planet.cta}text-white`}></input>
+                <textarea type="text" placeholder='Message' className={`w-full my-2 p-3 bg-black ${planet.cta} hover:${planet.cta} focus:${planet.cta} active:${planet.cta}text-white`}></textarea>
                 <div className={`cta text-lg md:p-5 p-3 md:text-lg text-sm ${planet.cta} uppercase ${planet.first} text-center md:w-1/3 w-full`}>send</div>
               </form>
             </div>

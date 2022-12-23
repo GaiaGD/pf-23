@@ -28,11 +28,19 @@ function Header() {
         <div className='header sticky top-0 z-50 border-b-[0.1px] border-white-100 border-opacity-20 md:flex justify-between items-center bg-black-200'>
 
             <div className='md:max-w-xl md:mt-8 md:mx-8 mb-2'>
-                <div className='header-planets flex items-center'>
+                <div className='md:mx-0 mx-4 mheader-planets flex items-center'>
                     {planetsThemes}
                 </div>
-                <div className='whatPlanet mt-5 mb-1 flex'>
-                    <p className='uppercase text-sm tracking-wider opacity-50 font-light'>YOU ARE ON {planet.selected}</p>
+                <div className='flex justify-between mt-5 mb-1'>
+                    <div className='whatPlanet border-r-[0.1px] border-slate-400 border-solid pr-5'>
+                        <p className='uppercase text-sm tracking-wider opacity-50 font-light'>YOU ARE ON {planet.selected}</p>
+                    </div>
+                    <div className='info'>
+                        <p className='uppercase text-sm tracking-wider opacity-50 font-light'></p>
+                    </div>
+                    <div className='info'>
+                        <p className='uppercase text-sm tracking-wider opacity-50 font-light'>YOU ARE ON {planet.selected}</p>
+                    </div>
                 </div>
             </div>
 

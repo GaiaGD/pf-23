@@ -25,6 +25,7 @@
 .mercuryGlow {
     -webkit-filter: drop-shadow(0px 5px 14px #C8C8C8);
     filter: drop-shadow(0px 5px 14px #C8C8C8);
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
 }
 .mercuryBorder {
     border-color: #C8C8C8;
@@ -58,6 +59,7 @@
 .venusGlow {
     -webkit-filter: drop-shadow(0px 5px 14px #FFE600);
     filter: drop-shadow(0px 5px 14px #FFE600);
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
 }
 .venusBorder {
     border-color: #FFE600;
@@ -91,6 +93,7 @@
 .marsGlow {
     -webkit-filter: drop-shadow(0px 5px 14px #ff0000);
     filter: drop-shadow(0px 5px 14px #ff0000);
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
 }
 .marsBorder {
     border-color: #FF0000;
@@ -125,6 +128,7 @@
 .jupiterGlow {
     -webkit-filter: drop-shadow(0px 5px 14px #E74663);
     filter: drop-shadow(0px 5px 14px #E74663);
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
 }
 .jupiterBorder {
     border-color: #E74663;
@@ -158,6 +162,7 @@
 .saturnGlow {
     -webkit-filter: drop-shadow(0px 5px 14px #f9b06a);
     filter: drop-shadow(0px 5px 14px #f9b06a);
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
 }
 .saturnBorder {
     border-color: #f9b06a;
@@ -191,6 +196,7 @@
 .uranusGlow {
     -webkit-filter: drop-shadow(0px 5px 14px #00EFFE);
     filter: drop-shadow(0px 5px 14px #00EFFE);
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
 }
 .uranusBorder {
     border-color: #00EFFE;
@@ -224,6 +230,7 @@
 .neptuneGlow {
     -webkit-filter: drop-shadow(0px 9px 6px #4f4ad4);
     filter: drop-shadow(0px 9px 6px #4f4ad4);
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1); 
 }
 .neptuneBorder {
     border-color: #281E9A;
