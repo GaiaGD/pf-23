@@ -7,7 +7,8 @@ function Header() {
 
     const planets = ['mercury', 'venus', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune']
 
-    const {planet, togglePlanet} = useContext(PlanetTheme)
+    const {planet, tempGravity, togglePlanet} = useContext(PlanetTheme)
+    console.log(tempGravity)
 
     const planetsThemes = planets.map(globe => {
         if (globe == planet.selected){
@@ -39,7 +40,7 @@ function Header() {
                         <p className='uppercase text-sm tracking-wider opacity-50 font-light'></p>
                     </div>
                     <div className='info'>
-                        <p className='uppercase text-sm tracking-wider opacity-50 font-light'>YOU ARE ON {planet.selected}</p>
+                        <p className='uppercase text-sm tracking-wider opacity-50 font-light'>TEMPERATURE: {planet.temperature}</p>
                     </div>
                 </div>
             </div>
