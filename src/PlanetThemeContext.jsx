@@ -2,7 +2,7 @@ import React from "react";
 const PlanetTheme = React.createContext()
 
 function PlanetThemeContextProvider(props){
-    // default mars for now
+    // default mars
     const [planet, setPlanet] = React.useState({selected: "mars", first: "marsOne", second: "marsTwo", cta: "marsCta", border: "marsBorder"})
     const [tempGravity, setTempGravity] = React.useState({gravity: 3.71, temperature: 45})
 
