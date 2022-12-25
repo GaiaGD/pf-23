@@ -11,10 +11,13 @@ function PlanetThemeContextProvider(props){
         fetch(`https://api.le-systeme-solaire.net/rest/bodies/${name}`)
         .then((response) => response.json())
         .then((data) => {
+            let kelvin = data.avgTemp
+            let toFarenheit = Math.trunc((kelvin-273.15)*1.8)+32
+
             setTempGravity(prevState => ({
                 ...prevState,
                 gravity: data.gravity,
-                temperature: data.avgTemp
+                temperature: toFarenheit
             }))
 
             setPlanet(prevState => ({
@@ -26,16 +29,6 @@ function PlanetThemeContextProvider(props){
                 border: [`${name}Border`]
             }))
         })
-
-        // setPlanet(prevState => ({
-        //     ...prevState,
-        //     selected: [`${name}`],
-        //     first: [`${name}One`],
-        //     second: [`${name}Two`],
-        //     cta: [`${name}Cta`],
-        //     border: [`${name}Border`]
-        // }))
-
     }
 
     return (

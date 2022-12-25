@@ -32,7 +32,7 @@ function Homepage() {
           {/* wheels app */}
           <div className='project md:flex text-white md:mb-40 mb-16 items-center w-full'>
             <div className='thumb md:w-5/12 w-full'>
-              <img className='w-full' src='src/assets/img/thumb-wheels-app.svg'></img>
+              <img className='w-full' src='./thumb-wheels-app.svg'></img>
             </div>
             <div className='mb:w-7/12 left-4'>
               <h2 className={`${planet.first} md:text-3xl text-xl uppercase`}>WHEELS APP</h2>
@@ -56,7 +56,7 @@ function Homepage() {
           {/* booking */}
           <div className='project md:flex text-white md:mb-40 mb-16 items-center w-full'>
             <div className='thumb md:w-5/12 w-full'>
-              <img className='w-full' src='src/assets/img/thumb-wheels-app.svg'></img>
+              <img className='w-full' src='./thumb-wheels-app.svg'></img>
             </div>
             <div className='mb:w-7/12 left-4'>
               <h2 className={`${planet.first} md:text-3xl text-xl uppercase`}>BOOKING</h2>
@@ -112,7 +112,7 @@ function Homepage() {
       <div className='planet-info h-[50vh]'>
         <div className='relative overflow-x-clip h-48 z-10'>
           <div className='absolute w-1/3 -right-48'>
-            <img src={`src/assets/img/${planet.selected}-zoom.png`}/>
+            <img src={`./${planet.selected}-zoom.png`}/>
           </div>
         </div>
 

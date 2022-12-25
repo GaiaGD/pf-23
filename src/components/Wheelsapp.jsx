@@ -24,15 +24,15 @@ function Wheelsapp() {
       {/* project imgs */}
       <div className='md:flex my-16'>
         <div className='md:w-3/6'>
-          <img className="my-16 mx-auto w-9/12 md:w-auto max-h-[40rem]" src='src/assets/img/projects/wheelsapp-demo.gif' />
+          <img className="my-16 mx-auto w-9/12 md:w-auto max-h-[40rem]" src='./projects/wheelsapp-demo.gif' />
         </div>
         <div className='md:w-3/6 wheelsapp-case-study md:flex items-center md:pr-64'>
           <div className='w-3/6 mx-auto p-8 lg:p-20'>
-            <img className="md:max-w-sm w-full" src='src/assets/img/projects/wa-logo-white.svg' />
+            <img className="md:max-w-sm w-full" src='./projects/wa-logo-white.svg' />
           </div>
           <div className='md:w-3/6'>
-            <img className="md:max-w-sm w-full" src='src/assets/img/projects/WA-departure.png'/>
-            <img className="md:max-w-sm w-full" src='src/assets/img/projects/WA-arrival.png'/>
+            <img className="md:max-w-sm w-full" src='./projects/WA-departure.png'/>
+            <img className="md:max-w-sm w-full" src='./projects/WA-arrival.png'/>
           </div>
         </div>
       </div>

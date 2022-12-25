@@ -8,18 +8,17 @@ function Header() {
     const planets = ['mercury', 'venus', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune']
 
     const {planet, tempGravity, togglePlanet} = useContext(PlanetTheme)
-    console.log(tempGravity)
 
     const planetsThemes = planets.map(globe => {
         if (globe == planet.selected){
             return (
                 <div className="md:mr-16 mr-6" key={globe} id={globe} onClick={(e) => togglePlanet(e.currentTarget.id)}>
-                    <img className={`${globe}Glow w-full selectedZoom`} src={`src/assets/img/${globe}.png`}/>
+                    <img className={`${globe}Glow w-full selectedZoom`} src={`./${globe}.png`}/>
                 </div>)
         } else {
             return (
                 <div className='md:mr-16 mr-6' key={globe} id={globe} onClick={(e) => togglePlanet(e.currentTarget.id)}>
-                    <img className="w-full opacity-30" src={`src/assets/img/${globe}.png`}/>
+                    <img className="w-full opacity-30" src={`./${globe}.png`}/>
                 </div>
             )
         }
@@ -33,14 +32,14 @@ function Header() {
                     {planetsThemes}
                 </div>
                 <div className='flex justify-between mt-5 mb-1'>
-                    <div className='whatPlanet border-r-[0.1px] border-slate-400 border-solid pr-5'>
-                        <p className='uppercase text-sm tracking-wider opacity-50 font-light'>YOU ARE ON {planet.selected}</p>
+                    <div className='whatPlanet w-4/12 border-r-[0.1px] border-slate-400 border-solid pr-5 mr-5'>
+                        <p className='capitalize text-sm tracking-wider opacity-50 font-light'>You are on {planet.selected}</p>
                     </div>
-                    <div className='info'>
-                        <p className='uppercase text-sm tracking-wider opacity-50 font-light'></p>
+                    <div className='info border-r-[0.1px] border-slate-400 border-solid w-4/12 pr-5 mr-5'>
+                        <p className='capitalize text-sm tracking-wider opacity-50 font-light'>Gravity: {tempGravity.gravity} m/s²</p>
                     </div>
-                    <div className='info'>
-                        <p className='uppercase text-sm tracking-wider opacity-50 font-light'>TEMPERATURE: {planet.temperature}</p>
+                    <div className='info border-r-[0.1px] border-slate-400 border-solid w-4/12'>
+                        <p className='capitalize text-sm tracking-wider opacity-50 font-light'>Temp: {tempGravity.temperature} °F</p>
                     </div>
                 </div>
             </div>
