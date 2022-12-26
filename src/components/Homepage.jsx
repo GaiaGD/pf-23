@@ -111,22 +111,19 @@ function Homepage() {
       {/* planet info */}
       <div className='planet-info h-[50vh]'>
         <div className='relative overflow-x-clip h-48 z-10'>
-          <div className='absolute w-1/3 -right-48'>
+          <div className='absolute md:w-1/3 w-11/12 md:-right-48 -right-32'>
             <img src={`./${planet.selected}-zoom.png`}/>
           </div>
         </div>
 
-        <div className='relative w-full h-48 flex'>
+        <div className='relative flex'>
           {/* scroll to be fixed */}
-          {/* <div className="scroll-container border-t-[0.1px] border-slate-400 border-solid py-3 w-full">
-            <div className="scroll-text">
-                <h2 className='text-xl font-light'>Mars can have huge dust storms which last for months and can cover the entire planet. Mars has 2 moons called Deimos and Phobos. They are named after the two horses that pull the Roman god of war, Mars’, chariot. They may be asteroids captured by Mars’ gravity.</h2>
-            </div>
-          </div> */}
+
           <div className='absolute right-1/4 left-1/4 w-2/4'>
             <h2 className={`text-right text-lg font-light ${planet.second}`}>Mars can have huge dust storms which last for months and can cover the entire planet</h2>
           </div>
         </div>
+        
       </div>
 
 

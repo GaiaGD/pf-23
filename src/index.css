@@ -80,43 +80,40 @@ transform: rotate(-90deg);
 
 /* text scrolling */
 
-.scroll-container {
+.page-head {
+  box-sizing: border-box;
+  padding: 0;
+  width: 50%;
+}
+
+
+/**
+ * Ticker
+ */
+
+.page-head__ticker {
   overflow: hidden;
 }
 
-.scroll-text {
+.msg {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 6s linear infinite;
   display: inline-block;
-  /* animation properties */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  
-  -moz-animation: my-animation 35s linear infinite;
-  -webkit-animation: my-animation 35s linear infinite;
-  animation: my-animation 35s linear infinite;
 }
 
-/* for Firefox */
-@-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-100%); }
+span {
+  padding-left: 24px;
+  /* to give a gap between messages */
 }
 
-/* for Chrome */
-@-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-100%); }
-}
-
-@keyframes my-animation {
-  from {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
   }
-  to {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+  100% {
+    transform: translate(-50%, 0);
+    /* changed from 100% */
   }
 }

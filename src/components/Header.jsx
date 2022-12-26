@@ -28,18 +28,18 @@ function Header() {
         <div className='header sticky top-0 z-50 border-b-[0.1px] border-white-100 border-opacity-20 md:flex justify-between items-center bg-black-200'>
 
             <div className='md:max-w-xl md:mt-8 md:mx-8 mb-2'>
-                <div className='md:mx-0 mx-4 mheader-planets flex items-center'>
+                <div className='md:mx-0 mx-4 header-planets flex items-center'>
                     {planetsThemes}
                 </div>
-                <div className='flex justify-between mt-5 mb-1'>
-                    <div className='whatPlanet w-4/12 border-r-[0.1px] border-slate-400 border-solid pr-5 mr-5'>
-                        <p className='capitalize text-sm tracking-wider opacity-50 font-light'>You are on {planet.selected}</p>
+                <div className='md:mx-0 mx-4 flex justify-between mt-5 mb-1'>
+                    <div className='whatPlanet w-4/12 border-r-[0.1px] border-slate-400 border-solid mr-5'>
+                        <p className='capitalize md:text-sm text-[10px] tracking-wider opacity-50 font-light'>You are on {planet.selected}</p>
                     </div>
-                    <div className='info border-r-[0.1px] border-slate-400 border-solid w-4/12 pr-5 mr-5'>
-                        <p className='capitalize text-sm tracking-wider opacity-50 font-light'>Gravity: {tempGravity.gravity} m/s²</p>
+                    <div className='info border-r-[0.1px] border-slate-400 border-solid w-4/12 mr-5'>
+                        <p className='capitalize md:text-sm text-[10px] tracking-wider opacity-50 font-light'>Gravity: {tempGravity.gravity} m/s²</p>
                     </div>
                     <div className='info border-r-[0.1px] border-slate-400 border-solid w-4/12'>
-                        <p className='capitalize text-sm tracking-wider opacity-50 font-light'>Temp: {tempGravity.temperature} °F</p>
+                        <p className='capitalize md:text-sm text-[10px] tracking-wider opacity-50 font-light'>Temp: {tempGravity.temperature} °F</p>
                     </div>
                 </div>
             </div>

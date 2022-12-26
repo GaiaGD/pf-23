@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App text-white">
-      <div className='background-container'>
+      <div className='background-container bg-black'>
         <div className="depth"></div>
         <div className="stars"></div>
         <div className="twinkling"></div>
