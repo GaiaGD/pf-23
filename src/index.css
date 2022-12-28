@@ -84,7 +84,6 @@ transform: rotate(-90deg);
   position: relative;
   width: 100%;
   overflow: hidden;
-  z-index: 1;
 }
 
 .scroll-copy {
@@ -102,12 +101,22 @@ transform: rotate(-90deg);
 }
 .scroll-copy > .facts {
   display: flex;
-  animation: scrollText 20s infinite linear;
+  animation: scrollText 40s infinite linear;
 }
 .scroll-copy > .info {
   display: flex;
-  animation: scrollText 14s infinite linear;
+  animation: scrollText 35s infinite linear;
 }
+
+@media screen and (min-width: 768px) {
+  .scroll-copy > .facts {
+    animation: scrollText 20s infinite linear;
+  }
+  .scroll-copy > .info {
+    animation: scrollText 14s infinite linear;
+  }
+}
+
 
 .scroll-copy > div > h2 {
   transition: all 2s ease;

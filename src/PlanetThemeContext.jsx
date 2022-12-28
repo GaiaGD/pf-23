@@ -12,6 +12,10 @@ function PlanetThemeContextProvider(props){
 
     function togglePlanet(name){
 
+        let planetFacts = planetsFactsFile.data.planets
+        const found = planetFacts.find(planet => planet.name == name)
+        setPlanetsFacts(found)
+
         fetch(`https://api.le-systeme-solaire.net/rest/bodies/${name}`)
         .then((response) => response.json())
         .then((data) => {
@@ -41,10 +45,6 @@ function PlanetThemeContextProvider(props){
             cta: [`${name}Cta`],
             border: [`${name}Border`]
         }))
-
-        let planetFacts = planetsFactsFile.data.planets
-        const found = planetFacts.find(planet => planet.name == name)
-        setPlanetsFacts(found)
 
     }
 

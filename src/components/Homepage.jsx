@@ -111,13 +111,14 @@ function Homepage() {
 
       {/* planet info */}
       <div className='planet-info h-[50vh]'>
+
         <div className='relative overflow-x-clip h-[45%] z-10'>
           <div className='absolute md:w-5/12 w-11/12 md:-right-[10%] -right-32'>
-            <img src={`./${planet.selected}-zoom.png`}/>
+            <img className='w-full' src={`./${planet.selected}-zoom.png`}/>
           </div>
         </div>
 
-        <div className='relative'>
+        <div className='relative z-0'>
 
           <div className="scroll fact h-16 border-b-[0.1px] border-t-[0.1px] border-white-100 border-opacity-20">
             <div className="scroll-copy">
