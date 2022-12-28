@@ -7,7 +7,7 @@ function Header() {
 
     const planets = ['mercury', 'venus', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune']
 
-    const {planet, tempGravity, togglePlanet} = useContext(PlanetTheme)
+    const {planet, togglePlanet} = useContext(PlanetTheme)
 
     const planetsThemes = planets.map(globe => {
         if (globe == planet.selected){
@@ -40,7 +40,7 @@ function Header() {
                     duration={1500}
                     className='w-32'
                     to="/">
-                    <h2 className='text-white text-lg'>HOME</h2>
+                    <h2 className='text-white md:text-lg text-sm text-center'>HOME</h2>
                 </Link>
                 <Link
                     smooth={true}
@@ -48,7 +48,7 @@ function Header() {
                     duration={1500}
                     className='w-32'
                     to="/#about">
-                    <h2 className='text-white text-lg'>ABOUT</h2>
+                    <h2 className='text-white md:text-lg text-sm text-center'>ABOUT</h2>
                 </Link>
                 <Link
                     smooth={true}
@@ -56,7 +56,7 @@ function Header() {
                     duration={1500}
                     className='w-32'
                     to="/#projects">
-                    <h2 className='text-white text-lg'>WORK</h2>
+                    <h2 className='text-white md:text-lg text-sm text-center'>WORK</h2>
                 </Link>
                 <Link
                     smooth={true}
@@ -64,7 +64,7 @@ function Header() {
                     duration={1500}
                     className='w-32'
                     to="/#contacts">
-                    <h2 className='text-white text-lg'>CONTACT</h2>
+                    <h2 className='text-white md:text-lg text-sm text-center'>CONTACT</h2>
                 </Link>
             </div>
         </div>

@@ -48,6 +48,9 @@ html, body {
     /* filter: opacity(0.5); */
 }
 
+
+/* arrows ____________________________________________________________ */ 
+
 .arrow {
 border-style: solid;
 border-width: 0 2px 2px 0;
@@ -78,7 +81,26 @@ transform: rotate(-90deg);
 }
 
 
-/* text scrolling */
+
+/* smooth animation _______________________________________________________ */ 
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+
+
+/* text scrolling _______________________________________________________ */ 
 .scroll {
   display: flex;
   position: relative;

@@ -7,55 +7,82 @@ import {PlanetTheme} from "../PlanetThemeContext"
 function Homepage() {
   const {planet, planetsFacts, planetInfo} = useContext(PlanetTheme)
 
+  function FadeInSection(props) {
+    const [isVisible, setVisible] = React.useState(false);
+    const domRef = React.useRef();
+    React.useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => setVisible(entry.isIntersecting));
+      });
+      observer.observe(domRef.current);
+    }, []);
+    return (
+      <div
+        className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+        ref={domRef}
+      >
+        {props.children}
+      </div>
+    );
+  }
+
   return (
     <div>
-      <div className='flex justify-between items-center'>
-        <div className='md:mt-64 md:mb-32 md:mx-32 my-16 mx-4 flex flex-col items-center'>
-            <h1 className={`${planet.second} md:text-6xl text-3xl md:mb-0 mb-16 text-center`}>Lorem ipsum dolor sit amet, <span className={`${planet.first}`}>Designer & Front-end Developer</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
-            <HashLink
-                smooth={true}
-                offset={-70}
-                duration={1500}
-                className={`${planet.cta} md:p-5 p-3 ${planet.first} md:m-16 md:w-1/3 w-full`}
-                to="/#projects"
-            >
-              <h5 className={`${planet.first} md:text-lg text-sm text-center`}>THINGS I'VE MADE</h5>
-            </HashLink>
+      <FadeInSection>
+        <div className='flex justify-between items-center'>
+          <div className='md:mt-64 md:mb-32 md:mx-32 my-16 mx-4 flex flex-col items-center'>
+              <h1 className={`${planet.second} md:text-6xl text-3xl md:mb-0 mb-16 text-center`}>Lorem ipsum dolor sit amet, <span className={`${planet.first}`}>Designer & Front-end Developer</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
+              <HashLink
+                  smooth={true}
+                  offset={-70}
+                  duration={1500}
+                  className={`${planet.cta} md:p-5 p-3 ${planet.first} md:m-16 md:w-1/3 w-full`}
+                  to="/#projects"
+              >
+                <h5 className={`${planet.first} md:text-lg text-sm text-center`}>THINGS I'VE MADE</h5>
+              </HashLink>
+          </div>
         </div>
-      </div>
+    </FadeInSection>
+    {/* things I've done */}
 
-      {/* things I've done */}
       <div id='projects' className='projects md:mt-64 md:mx-64 mx-4'>
-        <div className='mb:my-32 my-16'>
-            <h2 className={`${planet.first} md:text-4xl text-xl text-center md:text-left uppercase`}>what I’ve designed & built:</h2>
-        </div>
+          <FadeInSection>
+            <div className='mb:my-32 my-16'>
+                <h2 className={`${planet.first} md:text-4xl text-xl text-center md:text-left uppercase`}>what I’ve designed & built:</h2>
+            </div>
+          </FadeInSection>
+
         <div className='flex-col'>
           {/* wheels app */}
-          <div className='project md:flex text-white md:mb-40 mb-16 items-center w-full'>
-            <div className='thumb md:w-5/12 w-full'>
-              <img className='w-full' src='./thumb-wheels-app.svg'></img>
-            </div>
-            <div className='mb:w-7/12 left-4'>
-              <h2 className={`${planet.first} md:text-3xl text-xl uppercase`}>WHEELS APP</h2>
-              <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
-              <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
-              <p className='my-8 md:text-lg text-sm'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div className='flex justify-between items-center md:w-8/12 w-full'>
-                <div className='md:flex w-full'>
-                  <div className={`cta md:mb-0 mb-3 md:py-5 py-3 w-full mr-8`}>
-                    <Link to="/wheelsapp">
-                        <h5 className={`${planet.first} md:text-lg text-sm uppercase md:text-left text-center`}>view project <span className={`arrow-hp ${planet.border} ml-2 right`}></span></h5>
-                    </Link>
-                  </div>
-                  <div className={`cta md:p-5 p-3 w-full`}>
-                    <h5 className={`${planet.first} md:text-lg text-sm uppercase md:text-left text-center`}>live site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
+          <FadeInSection>
+            <div className='project md:flex text-white md:mb-40 mb-16 items-center w-full'>
+              <div className='thumb md:w-5/12 w-full'>
+                <img className='w-full' src='./thumb-wheels-app.svg'></img>
+              </div>
+              <div className='mb:w-7/12 left-4'>
+                <h2 className={`${planet.first} md:text-3xl text-xl uppercase`}>WHEELS APP</h2>
+                <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
+                <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
+                <p className='my-8 md:text-lg text-sm'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div className='flex justify-between items-center md:w-8/12 w-full'>
+                  <div className='md:flex w-full'>
+                    <div className={`cta md:mb-0 mb-3 md:py-5 py-3 w-full mr-8`}>
+                      <Link to="/wheelsapp">
+                          <h5 className={`${planet.first} md:text-lg text-sm uppercase md:text-left text-center`}>view project <span className={`arrow-hp ${planet.border} ml-2 right`}></span></h5>
+                      </Link>
+                    </div>
+                    <div className={`cta md:p-5 p-3 w-full`}>
+                      <h5 className={`${planet.first} md:text-lg text-sm uppercase md:text-left text-center`}>live site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </FadeInSection>
+
           {/* booking */}
-          <div className='project md:flex text-white md:mb-40 mb-16 items-center w-full'>
+          {/* <div className='project md:flex text-white md:mb-40 mb-16 items-center w-full'>
             <div className='thumb md:w-5/12 w-full'>
               <img className='w-full' src='./thumb-wheels-app.svg'></img>
             </div>
@@ -77,13 +104,13 @@ function Homepage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* see more CTA*/}
-        <div className={`cta mx-auto my-32 md:p-5 p-3 ${planet.cta} md:w-1/3 w-full`}>
+        {/* <div className={`cta mx-auto my-32 md:p-5 p-3 ${planet.cta} md:w-1/3 w-full`}>
           <h5 className={`${planet.first} md:text-lg text-sm text-center uppercase`}>See more</h5>
-        </div>
+        </div> */}
       </div>
 
       {/* about me */}
@@ -112,9 +139,9 @@ function Homepage() {
       {/* planet info */}
       <div className='planet-info h-[50vh]'>
 
-        <div className='relative overflow-x-clip h-[45%] z-10'>
-          <div className='absolute md:w-5/12 w-11/12 md:-right-[10%] -right-32'>
-            <img className='w-full' src={`./${planet.selected}-zoom.png`}/>
+        <div className='relative overflow-x-clip md:h-[45%] h-[75%] z-10'>
+          <div className='absolute md:w-5/12 w-11/12 md:-right-[10%] md:-right-32 -right-16'>
+            <img className='w-full drop-shadow-[0_5px_14px_rgba(0,0,0,1)]' src={`./${planet.selected}-zoom.png`}/>
           </div>
         </div>
 
