@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { PlanetThemeContextProvider } from "./PlanetThemeContext"
-import ScrollToTop from './utils.jsx/ScrollToTop'
+import ScrollToTop from './utils/ScrollToTop'
 
 import App from './App'
 import './index.css'

@@ -100,19 +100,19 @@ transform: rotate(-90deg);
   /* transform: scale(2); */
   transition: all 1s ease;
 }
-.scroll-copy > div {
+.scroll-copy > .facts {
   display: flex;
-  animation: scrollText 15s infinite linear;
+  animation: scrollText 20s infinite linear;
+}
+.scroll-copy > .info {
+  display: flex;
+  animation: scrollText 14s infinite linear;
 }
 
 .scroll-copy > div > h2 {
   transition: all 2s ease;
 }
 
-
-/*div:hover {
-  animation-play-state: paused;
-}*/
 @keyframes scrollText {
   from   { transform: translateX(0%); }
   to { transform: translateX(-50%); }

@@ -5,7 +5,8 @@ import { animateScroll as scroll } from "react-scroll";
 import {PlanetTheme} from "../PlanetThemeContext"
 
 function Homepage() {
-  const {planet, tempGravity} = useContext(PlanetTheme)
+  const {planet, planetsFacts, planetInfo} = useContext(PlanetTheme)
+
   return (
     <div>
       <div className='flex justify-between items-center'>
@@ -110,7 +111,7 @@ function Homepage() {
 
       {/* planet info */}
       <div className='planet-info h-[50vh]'>
-        <div className='relative overflow-x-clip h-[50%] z-10'>
+        <div className='relative overflow-x-clip h-[45%] z-10'>
           <div className='absolute md:w-5/12 w-11/12 md:-right-[10%] -right-32'>
             <img src={`./${planet.selected}-zoom.png`}/>
           </div>
@@ -118,18 +119,51 @@ function Homepage() {
 
         <div className='relative'>
 
-          <div class="scroll h-16 border-b-[0.1px] border-t-[0.1px] border-white-100 border-opacity-20">
-            <div class="scroll-copy">
-              <div>
-                <h2 className='md:text-2xl text-lg font-light md:text-right text-center pr-4'> Mars can have huge dust storms which last for months and can cover the entire planet </h2>
+          <div className="scroll fact h-16 border-b-[0.1px] border-t-[0.1px] border-white-100 border-opacity-20">
+            <div className="scroll-copy">
+              <div className="facts">
+                <h2 className='md:text-2xl text-lg font-light md:text-right text-center pr-4'>{planetsFacts.one}</h2>
                 <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
-                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Gravity: {tempGravity.gravity} m/s² </h2>
+                <h2 className='md:text-2xl text-lg font-light md:text-right text-center pr-4'>{planetsFacts.two}</h2>
                 <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
-                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Temperature: {tempGravity.temperature} °F </h2>
+                <h2 className='md:text-2xl text-lg font-light md:text-right text-center pr-4'>{planetsFacts.one}</h2>
                 <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
-                <h2 className='md:text-2xl text-lg font-light md:text-right text-center pr-4'> Mars can have huge dust storms which last for months and can cover the entire planet</h2>
-                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Gravity: {tempGravity.gravity} m/s²</h2>
-                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Temperature: {tempGravity.temperature} °F </h2>
+                <h2 className='md:text-2xl text-lg font-light md:text-right text-center pr-4'>{planetsFacts.two}</h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+              </div>
+            </div>
+          </div>
+
+          <div className="scroll info h-16 border-b-[0.1px] border-t-[0.1px] border-white-100 border-opacity-20">
+            <div className="scroll-copy">
+              <div className="info">
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Gravity: {planetInfo.gravity} m/s² </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Temperature: {planetInfo.temperature} °F </h2>
+                {planetInfo.moons && <><h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2> <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'>Moons: {planetInfo.moons.length}</h2></>}
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Axial Tilt: {planetInfo.axialTilt} degrees</h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Sidereal orbit period: {planetInfo.sideralOrbit} days</h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Density: {planetInfo.density} kg/m³</h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Eccentricity: {planetInfo.eccentricity}</h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Gravity: {planetInfo.gravity} m/s² </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Temperature: {planetInfo.temperature} °F </h2>
+                {planetInfo.moons && <><h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2> <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'>Moons: {planetInfo.moons.length}</h2></>}
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Axial Tilt: {planetInfo.axialTilt} degrees</h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Sidereal orbit period: {planetInfo.sideralOrbit} days</h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Density: {planetInfo.density} kg/m³</h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Eccentricity: {planetInfo.eccentricity}</h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+
               </div>
             </div>
           </div>
