@@ -5,7 +5,7 @@ import { animateScroll as scroll } from "react-scroll";
 import {PlanetTheme} from "../PlanetThemeContext"
 
 function Homepage() {
-  const {planet} = useContext(PlanetTheme)
+  const {planet, tempGravity} = useContext(PlanetTheme)
   return (
     <div>
       <div className='flex justify-between items-center'>
@@ -15,7 +15,7 @@ function Homepage() {
                 smooth={true}
                 offset={-70}
                 duration={1500}
-                className={`${planet.cta} md:p-5 p-3 ${planet.first} border-red-700 border-2 border-solid md:m-16 md:w-1/3 w-full`}
+                className={`${planet.cta} md:p-5 p-3 ${planet.first} md:m-16 md:w-1/3 w-full`}
                 to="/#projects"
             >
               <h5 className={`${planet.first} md:text-lg text-sm text-center`}>THINGS I'VE MADE</h5>
@@ -89,7 +89,7 @@ function Homepage() {
       <div id='about' className='flex justify-between items-center mx-4'>
         <div className='md:mt-64 mb-32 md:mx-64 md:flex flex-col items-end'>
             <h1 className={`${planet.first} md:text-4xl text-xl text-center md:text-left uppercase my-8`}>about me</h1>
-            <h2 className='text-white md:text-3xl text-ld md:text-right text-center'>Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip, space exploration, animal rescue & jiu-jitsu white belt ex ea commodo consequat.</h2>
+            <h2 className='md:text-3xl text-lg md:text-right text-center'>Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip, space exploration, animal rescue & jiu-jitsu white belt ex ea commodo consequat.</h2>
             <div className={`cta ${planet.cta} md:p-5 p-3 my-16 md:w-1/3 w-full`}>
               <h5 className={`${planet.first} md:text-lg text-sm text-center`}>DOWNLOAD RESUME / CV</h5>
             </div>
@@ -110,18 +110,30 @@ function Homepage() {
 
       {/* planet info */}
       <div className='planet-info h-[50vh]'>
-        <div className='relative overflow-x-clip h-48 z-10'>
-          <div className='absolute md:w-1/3 w-11/12 md:-right-48 -right-32'>
+        <div className='relative overflow-x-clip h-[50%] z-10'>
+          <div className='absolute md:w-5/12 w-11/12 md:-right-[10%] -right-32'>
             <img src={`./${planet.selected}-zoom.png`}/>
           </div>
         </div>
 
-        <div className='relative flex'>
-          {/* scroll to be fixed */}
+        <div className='relative'>
 
-          <div className='absolute right-1/4 left-1/4 w-2/4'>
-            <h2 className={`text-right text-lg font-light ${planet.second}`}>Mars can have huge dust storms which last for months and can cover the entire planet</h2>
+          <div class="scroll h-16 border-b-[0.1px] border-t-[0.1px] border-white-100 border-opacity-20">
+            <div class="scroll-copy">
+              <div>
+                <h2 className='md:text-2xl text-lg font-light md:text-right text-center pr-4'> Mars can have huge dust storms which last for months and can cover the entire planet </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Gravity: {tempGravity.gravity} m/s² </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Temperature: {tempGravity.temperature} °F </h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> - </h2>
+                <h2 className='md:text-2xl text-lg font-light md:text-right text-center pr-4'> Mars can have huge dust storms which last for months and can cover the entire planet</h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Gravity: {tempGravity.gravity} m/s²</h2>
+                <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Temperature: {tempGravity.temperature} °F </h2>
+              </div>
+            </div>
           </div>
+
         </div>
         
       </div>

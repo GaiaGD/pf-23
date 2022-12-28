@@ -27,24 +27,13 @@ function Header() {
     return (
         <div className='header sticky top-0 z-50 border-b-[0.1px] border-white-100 border-opacity-20 md:flex justify-between items-center bg-black-200'>
 
-            <div className='md:max-w-xl md:mt-8 md:mx-8 mb-2'>
+            <div className='md:max-w-xl md:mx-8 md:mt-8 mt-6 md:mb-8 mb-2'>
                 <div className='md:mx-0 mx-4 header-planets flex items-center'>
                     {planetsThemes}
                 </div>
-                <div className='md:mx-0 mx-4 flex justify-between mt-5 mb-1'>
-                    <div className='whatPlanet w-4/12 border-r-[0.1px] border-slate-400 border-solid mr-5'>
-                        <p className='capitalize md:text-sm text-[10px] tracking-wider opacity-50 font-light'>You are on {planet.selected}</p>
-                    </div>
-                    <div className='info border-r-[0.1px] border-slate-400 border-solid w-4/12 mr-5'>
-                        <p className='capitalize md:text-sm text-[10px] tracking-wider opacity-50 font-light'>Gravity: {tempGravity.gravity} m/s²</p>
-                    </div>
-                    <div className='info border-r-[0.1px] border-slate-400 border-solid w-4/12'>
-                        <p className='capitalize md:text-sm text-[10px] tracking-wider opacity-50 font-light'>Temp: {tempGravity.temperature} °F</p>
-                    </div>
-                </div>
             </div>
 
-            <div className='flex max-w-lg md:m-8 m-2'>
+            <div className='flex max-w-lg md:mx-8 mx-4 mt:m-8 mt-4 mb:m-8 mb-4'>
                 <Link
                     smooth={true}
                     offset={-70}
