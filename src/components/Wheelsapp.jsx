@@ -31,7 +31,7 @@ function Wheelsapp() {
           <img className="my-16 mx-auto w-9/12 md:w-auto max-h-[40rem]" src='./projects/wheelsapp-demo.gif' />
         </div>
         <div className='md:w-3/6 wheelsapp-case-study md:flex items-center md:pr-64'>
-          <div className='w-3/6 mx-auto p-8 lg:p-20'>
+          <div className='w-3/6 mx-auto p-8 lg:p-16'>
             <img className="md:max-w-sm w-full" src='./projects/wa-logo-white.svg' />
           </div>
           <div className='md:w-3/6'>

@@ -43,7 +43,7 @@ html, body {
 }
 
 .wheelsapp-case-study {
-    background-image: url('assets/img/projects/wheelsapp-bg.jpg');
+    background-image: url('../public/projects/wheelsapp-bg.jpg');
     background-size: cover;
     /* filter: opacity(0.5); */
 }

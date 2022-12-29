@@ -39,14 +39,14 @@ function Homepage() {
           <FadeInSection>
             <div className='project md:flex text-white md:mb-40 mb-16 items-center w-full'>
               <div className='thumb md:w-5/12 w-full'>
-                <img className='w-full' src='./thumb-wheels-app.svg'></img>
+                <img className='w-full md:pr-8 md:pb-0 pb-4' src='./projects/WA-arrival.png'></img>
               </div>
-              <div className='mb:w-7/12 left-4'>
+              <div className='md:w-7/12 left-4'>
                 <h2 className={`${planet.first} md:text-3xl text-xl uppercase`}>WHEELS APP</h2>
                 <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
                 <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
-                <p className='my-8 md:text-lg text-sm'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div className='flex justify-between items-center md:w-8/12 w-full'>
+                <p className='mt-8 md:text-lg text-sm'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div className='flex justify-between items-center'>
                   <div className='md:flex w-full'>
                     <div className={`cta md:mb-0 mb-3 md:py-5 py-3 w-full mr-8`}>
                       <Link to="/wheelsapp">
@@ -62,34 +62,6 @@ function Homepage() {
             </div>
           </FadeInSection>
 
-          {/* booking */}
-          {/*
-          <FadeInSection>
-            <div className='project md:flex text-white md:mb-40 mb-16 items-center w-full'>
-              <div className='thumb md:w-5/12 w-full'>
-                <img className='w-full' src='./thumb-wheels-app.svg'></img>
-              </div>
-              <div className='mb:w-7/12 left-4'>
-                <h2 className={`${planet.first} md:text-3xl text-xl uppercase`}>BOOKING</h2>
-                <h5 className='md:text-lg text-sm my-2'>UI - UX, Development</h5>
-                <div className={`${planet.second}`}><span className='mr-8 md:text-lg text-sm'>REACT.JS</span><span className='mr-8 md:text-lg text-sm'>JAVASCRIPT</span><span className='md:text-lg text-sm'>CSS</span></div>
-                <p className='my-8 md:text-lg text-sm'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div className='flex justify-between items-center md:w-8/12 w-full'>
-                  <div className='md:flex w-full'>
-                    <div className={`cta md:mb-0 mb-3 md:py-5 py-3 w-full mr-8`}>
-                      <Link to="/wheelsapp">
-                        <h5 className={`${planet.first} md:text-lg text-sm uppercase md:text-left text-center`}>view project <span className={`arrow-hp ${planet.border} ml-2 right`}></span></h5>
-                      </Link>
-                    </div>
-                    <div className={`cta md:p-5 p-3 w-full`}>
-                      <h5 className={`${planet.first} md:text-lg text-sm uppercase md:text-left text-center`}>live site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </FadeInSection>
-          */}
         </div>
 
         {/* see more CTA*/}
@@ -135,15 +107,15 @@ function Homepage() {
       <FadeInSection>
         <div className='planet-info h-[50vh]'>
 
-          <div className='relative overflow-x-clip md:h-[45%] h-[75%] z-10'>
-            <div className='absolute md:w-5/12 w-11/12 md:-right-[10%] md:-right-32 -right-16'>
+          <div className='relative overflow-x-clip md:h-[45%] h-[50%] md:z-10 z-0'>
+            <div className='absolute md:w-5/12 w-full md:-right-32 -right-16'>
               <img className='w-full drop-shadow-[0_5px_14px_rgba(0,0,0,1)]' src={`./${planet.selected}-zoom.png`}/>
             </div>
           </div>
 
-          <div className='relative z-0'>
+          <div className='relative md:z-0 z-10'>
 
-            <div className="scroll fact h-16 border-b-[0.1px] border-t-[0.1px] border-white-100 border-opacity-20">
+            <div className="scroll bg-black fact h-16 border-b-[0.1px] border-t-[0.1px] border-white-100 border-opacity-20">
               <div className="scroll-copy">
                 <div className="facts">
                   <h2 className='md:text-2xl text-lg font-light md:text-right text-center pr-4'>{planetsFacts.one}</h2>
@@ -158,7 +130,7 @@ function Homepage() {
               </div>
             </div>
 
-            <div className="scroll info h-16 border-b-[0.1px] border-t-[0.1px] border-white-100 border-opacity-20">
+            <div className="scroll bg-black info h-16 border-b-[0.1px] border-t-[0.1px] border-white-100 border-opacity-20">
               <div className="scroll-copy">
                 <div className="info">
                   <h2 className='md:text-2xl text-lg md:text-right text-center pr-4'> Gravity: {planetInfo.gravity} m/s² </h2>
