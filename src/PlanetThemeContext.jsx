@@ -8,7 +8,14 @@ function PlanetThemeContextProvider(props){
 
     const [planetsFacts, setPlanetsFacts] = React.useState({ "name": "mars", "one" : "From time to time, winds on Mars are strong enough to create dust storms, covering most of the planet while taking months for all the dust to settle.", "two" : "Through continuous observations and analysis, it is strongly believed that Mars was once very similar to Earth, possessing water or even whole oceans." })
     const [planet, setPlanet] = React.useState({selected: "mars", first: "marsOne", second: "marsTwo", cta: "marsCta", border: "marsBorder"})
-    const [planetInfo, setPlanetInfo] = React.useState({gravity: 3.71, temperature: 45, moons: [0, 1] , axialTilt: 25.19 , density: 3.934 , sideralOrbit: 686, density: "3934.1 kg/m³", eccentricity: "0.0935"})
+    const [planetInfo, setPlanetInfo] = React.useState({
+        gravity: 3.71,
+        temperature: 45,
+        moons: [0, 1] ,
+        axialTilt: 25.19 ,
+        sideralOrbit: 686,
+        density: 3.934,
+        eccentricity: "0.0935"})
 
     function togglePlanet(name){
 
