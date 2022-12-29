@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 import { animateScroll as scroll } from "react-scroll";
 import {PlanetTheme} from "../PlanetThemeContext"
+import FadeInSection from '../utils/FadeInSection'
 
 function Header() {
 
