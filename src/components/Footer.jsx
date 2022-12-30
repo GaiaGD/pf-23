@@ -9,12 +9,12 @@ function Footer() {
       <div className='h-[30vh] md:mt-80 mt-40 flex-col content-between'>
         <div id="contacts" className='md:px-64 mx-4 md:mt-48 md:mb-20'>
           <div className='flex-col justify-between mx-auto'>
-            <h1 className={`${planet.first} md:text-4xl text-lg uppercase mb-8 text-center`}>get in touch</h1>
+            <h1 className={`${planet.first} md:text-4xl text-2xl uppercase mb-8 text-center`}>get in touch</h1>
             <div className=''>
 
-              <h2 className={`${planet.second} md:text-3xl text-lg text-center`}>hi.gaiadg@gmail.com</h2>
-              <h2 className="md:text-3xl text-lg text-center pt-4">My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</h2>
-              <h2 className="md:text-3xl text-lg text-center pt-16">Or find me here:</h2>
+              <h2 className={`${planet.second} md:text-2xl text-lg text-center`}>hi.gaiadg@gmail.com</h2>
+              <h2 className="md:text-2xl text-lg text-center pt-4">Whether you want to hire me, have a simple question or just want to say hi, drop me a line!</h2>
+              <h2 className={`${planet.second} md:text-2xl text-lg text-center pt-16`}>Or find me here:</h2>
 
               <div className='mt-8 md:mb-0 mb-8 icons contact flex justify-center'>
                 <div className='linkedin mr-16'>
