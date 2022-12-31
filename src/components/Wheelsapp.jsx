@@ -15,20 +15,23 @@ function Wheelsapp() {
             <div className='md:w-2/3'>
               <div className='md:mt-16 mt-8 mb-4'>
                 <h5 className='text-xl font-semibold mb-2'>Intro</h5>
-                <p className='md:text-lg text-sm md:leading-relaxed leading-relaxed'>
+                <p className='md:text-lg text-sm md:leading-relaxed leading-relaxed md:tracking-wide tracking-wide'>
                 Once entered departure city, arrival city and airline, you’ll have access to many insightful info about the flight you're tracking.
                 This virtual boarding pass can show you the scheduled time, the actual time of departure and the eventual delay, the terminal and the gate for both the departure and the arrival airports.
                 </p>
-                <p className='md:text-lg text-sm mt-4 md:mb-16 mb-8 md:leading-relaxed leading-relaxed'>
+                <p className='md:text-lg text-sm mt-4 md:leading-relaxed leading-relaxed md:tracking-wide tracking-wide'>
                 This web app shows also the aircraft and its flight number, and if available, at what point of the route your flight is.
                 And last but not least, you'll also be able to check the weather and what these cities look like!
+                </p>
+                <p className='md:text-lg text-sm mt-4 md:mb-16 mb-8 md:leading-relaxed leading-relaxed md:tracking-wide tracking-wide'>
+                If you don't necessarily have a flight in mind you want to track, you can just look up whaterver is in the air right now on <a className="underline" href='https://www.flightradar24.com/'>Flightradar24.</a>
                 </p>
               </div>
             </div>
             <div className='md:w-1/3'>
               <div className='md:pl-16 md:mt-16 mt-8 mb-4'>
                 <h5 className='text-xl font-semibold mb-2'>Fun Fact</h5>
-                <p className='md:text-sm text-sm md:leading-relaxed leading-relaxed font-light tracking-wider'>
+                <p className='md:text-sm text-sm md:leading-relaxed leading-relaxed font-light md:tracking-wider tracking-wider'>
                   I've originally developed this web app in 2015 when I started learning coding - it was all built using jQuery!
                 </p>
               </div>
@@ -69,20 +72,34 @@ function Wheelsapp() {
         <div className='mt-40'>
           <div className='info md:mx-64 mx-4'>
             <h5 className='text-xl font-semibold xl:w-2/3 xl:mx-auto'>Features</h5>
-            <p className='md:text-lg text-sm mt-2 mb-8 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto'>
-              This app relies on different APIs.
+            <p className='md:text-lg text-sm mt-2 mb-8 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto md:tracking-wide tracking-wide'>
+              This app is built in html, css and react.js and it's able to collect all the possible data for any (almost any!) plane up in the air in this precise moment.
+              It relies on different APIs: two flight tracking api to gather airports and flight info, one to get pictures of the locations and the arrival, one to get the weather information.
+              Moreover, it also makes api requests to autocomplete airports and airlines.
             </p>
           </div>
-
           <div className='info md:mx-64 mx-4'>
             <h5 className='text-xl font-semibold xl:w-2/3 xl:mx-auto'>Challenges</h5>
-            <p className='md:text-lg text-sm mt-2 mb-8 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally</p>
+            <p className='md:text-lg text-sm mt-2 mb-8 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto md:tracking-wide tracking-wide'>
+              Generally, the hardest part was using two API requests for flight tracking back to back:
+              it's hard to find free APIs for sensible data as flight tracking that gives you. Similarly as for free images API. This is the reason why sometimes data is missing.
+              Another tough part was autocompleting the airports in order to get to their IATA code. But that gave me the chance to learn about RegExp objects.
+              Unfortunately, I am still working on the instance of multiple results - ie: if there are more than one flight in the air for the same day for the same route, like the case of New York to London,
+              it's only able to show you the flight that took off the earliest. Stay tuned!
+              </p>
+          </div>
+          <div className='info md:mx-64 mx-4'>
+            <p className='md:text-lg text-sm mt-2 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto md:tracking-wide tracking-wide'>
+              APIs by: Aerodatabox, Airlabs, Unsplash, Openweathermap</p>
+            <p className='md:text-lg text-sm mt-2 mb-8 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto md:tracking-wide tracking-wide'>
+              Airports list by <a className='underline' target="_blank" href='https://github.com/konsalex'>konsalex</a>, Airline codes by <a className='underline' target="_blank" href='https://github.com/npow'>npow</a>
+            </p>
           </div>
         </div>
       </FadeInSection>
 
       <FadeInSection>
-        <div className='md:mx-64 mx-4'>
+        <div className='md:mx-64 mx-4'> 
           <div className="mx-auto md:w-2/6 md:my-32 my-16">
             {/* <Link to="">
               <div className={`cta p-5 w-full ${planet.cta}2`}>

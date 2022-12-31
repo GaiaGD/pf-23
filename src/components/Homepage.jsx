@@ -45,7 +45,7 @@ function Homepage() {
                 <h2 className={`${planet.first} md:text-3xl text-xl uppercase`}>WHEELS APP</h2>
                 <h5 className='md:text-lg text-sm font-light my-2'>UI - UX, Development</h5>
                 <div className={`${planet.second} font-light md:text-lg text-sm`}><span className='mr-8'>REACT.JS</span><span className='mr-8'>API</span><span>CSS</span></div>
-                <p className='md:mt-8 mt-4 md:text-lg md:leading-relaxed leading-relaxed text-sm'>Wouldn’t it be great to have a “smart” ticket that tells you what is your arrival terminal, gate number, and maybe even if you’ll face delays and the weather condition at destination?
+                <p className='md:mt-8 mt-4 md:text-lg md:leading-relaxed leading-relaxed text-sm md:tracking-wide tracking-wide'>Wouldn’t it be great to have a “smart” ticket that tells you what is your arrival terminal, gate number, and maybe even if you’ll face delays and the weather condition at destination?
                 All in the same place? That's what I had in mind when I created Wheels App: works on all flights currently in the air!
                 </p>
                   <div className='md:flex w-full'>
