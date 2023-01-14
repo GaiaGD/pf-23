@@ -40,7 +40,7 @@ function Header() {
                     offset={-70}
                     duration={1500}
                     className='w-32'
-                    to="/">
+                    to="/#intro">
                     <h2 className='text-white md:text-lg text-sm text-center'>HOME</h2>
                 </Link>
                 <Link

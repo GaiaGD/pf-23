@@ -24,7 +24,7 @@ function Wheelsapp() {
                 And last but not least, you'll also be able to check the weather and what these cities look like!
                 </p>
                 <p className='md:text-lg text-sm mt-4 md:mb-16 mb-8 md:leading-relaxed leading-relaxed md:tracking-wide tracking-wide'>
-                If you don't necessarily have a flight in mind you want to track, you can just look up whaterver is in the air right now on <a className="underline" href='https://www.flightradar24.com/'>Flightradar24.</a>
+                If you don't necessarily have a flight in mind you want to track, you can just look up whaterver is in the air right now on <a className="underline" target="_blank" href='https://www.flightradar24.com/'>Flightradar24.</a>
                 </p>
               </div>
             </div>
