@@ -26,10 +26,11 @@ function PrivateSale() {
             </div>
 
         </div>
-
         <div className='md:flex md:w-2/6 md:mx-64 mx-4'>
             <div className={`py-5 w-full mr-8`}>
-              <h5 className={`${planet.first} ${planet.cta}2 p-5 md:text-lg text-sm text-center uppercase`}>live&nbsp;site <span className={`arrow-hp ${planet.border} ml-2 newTab`}></span></h5>
+              <a href='https://starlit-baklava-6ae457.netlify.app/' target="_blank">
+                <h5 className={`${planet.first} ${planet.cta}2 p-5 md:text-lg text-sm text-center uppercase`}>live&nbsp;site <span className={`arrow-hp ${planet.border} ml-2 newTab`}></span></h5>
+              </a>
             </div>
             <div className={`cta py-5 w-full`}>
               <a href='https://github.com/GaiaGD/private-sale-ecomm' target="_blank">

@@ -54,7 +54,9 @@ function Homepage() {
                       </Link>
                     </div>
                     <div className={`cta md:py-5 w-full mr-8`}>
-                    <h5 className={`${planet.first} ${planet.cta}2 p-5 md:text-lg text-sm uppercase text-center`}>live&nbsp;site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
+                      <a href='https://starlit-baklava-6ae457.netlify.app/' target="_blank">
+                        <h5 className={`${planet.first} ${planet.cta}2 p-5 md:text-lg text-sm uppercase text-center`}>live&nbsp;site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
+                      </a>
                     </div>
                 </div>
               </div>
@@ -116,7 +118,9 @@ function Homepage() {
                 <h2 className='md:text-2xl text-lg md:text-right text-center mt-4'>Beside design and technology, I'm passionate about space exploration, I love brazilian jiu-jitsu and I do my best in helping animal rescuing.</h2>
               </div>
               <div className={`cta ${planet.cta} md:p-5 p-3 my-16 md:w-1/3 w-full`}>
-                <h5 className={`${planet.first} md:text-lg text-sm text-center`}>DOWNLOAD RESUME / CV</h5>
+                <a href='https://drive.google.com/file/d/1QCaxTbun2YS9qjNBt4rXqEy1SurFpXPo/view' target='_blank'>
+                  <h5 className={`${planet.first} md:text-lg text-sm text-center`}>DOWNLOAD RESUME / CV</h5>
+                </a>
               </div>
           </div>
         </div>

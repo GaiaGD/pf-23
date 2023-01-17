@@ -71,22 +71,25 @@ function Wheelsapp() {
       <FadeInSection>
         <div className='mt-40'>
           <div className='info md:mx-64 mx-4'>
-            <h5 className='text-xl font-semibold xl:w-2/3 xl:mx-auto'>Features</h5>
+            <h5 className='text-xl font-semibold xl:w-2/3 xl:mx-auto'>How was it build</h5>
             <p className='md:text-lg text-sm mt-2 mb-4 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto md:tracking-wide tracking-wide'>
               This app is built in html, css and react.js and it's able to collect all the possible data for any (almost any!) plane up in the air in this precise moment.
-              It relies on different APIs: two flight tracking api to gather airports and flight info, one to get pictures of the locations and the arrival, one to get the weather information.
-              Moreover, it also makes api requests to autocomplete airports and airlines.
+              It relies on different APIs: two flight tracking APIs to gather airports and flight info, one to get pictures of the locations and the arrival, one to get the weather information.
             </p>
-          </div>
-          <div className='info md:mx-64 mx-4 mt-8'>
-            <h5 className='text-xl font-semibold xl:w-2/3 xl:mx-auto'>Challenges</h5>
             <p className='md:text-lg text-sm mt-2 mb-4 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto md:tracking-wide tracking-wide'>
-              Generally, the hardest part was using two API requests for flight tracking back to back:
-              it's hard to find free APIs for sensible data as flight tracking that gives you. Similarly as for free images API. This is the reason why sometimes data is missing.
-              Another tough part was autocompleting the airports in order to get to their IATA code. But that gave me the chance to learn about RegExp objects.
+              To make it easier for the user, the form has also autocomplete created with RegExp objects for both the departure and arrival airports and the airline.
+            </p>
+            <p className='md:text-lg text-sm mt-2 mb-4 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto md:tracking-wide tracking-wide'>
+              The status bar that shows how much of the flight has been completed is calculated subtracting the total time passed between the time of departure and the current time to the total flight time.
+              All the hours are obviously calculated in UTC to avoid time zone discrepancies.
+            </p>
+            <p className='md:text-lg text-sm mt-2 mb-4 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto md:tracking-wide tracking-wide'>
+              Please note: the set of data used is free and not for commercial use, and for this reason is sometimes limited. Some flights might not be available or the images of the airports are not the most accurate.
+            </p>
+            <p className='md:text-lg text-sm mt-2 mb-4 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto md:tracking-wide tracking-wide'>
               Unfortunately, I am still working on the instance of multiple results - ie: if there are more than one flight in the air for the same day for the same route, like the case of New York to London,
               it's only able to show you the flight that took off the earliest. Stay tuned!
-              </p>
+            </p>
           </div>
           <div className='info md:mx-64 mx-4 mt-8'>
             <p className='md:text-lg text-sm mt-2 md:leading-relaxed leading-relaxed xl:w-2/3 xl:mx-auto md:tracking-wide tracking-wide'>
