@@ -54,7 +54,7 @@ function Homepage() {
                       </Link>
                     </div>
                     <div className={`cta md:py-5 w-full mr-8`}>
-                      <a href='https://starlit-baklava-6ae457.netlify.app/' target="_blank">
+                      <a href='https://superlative-tiramisu-d2e8f7.netlify.app/' target="_blank">
                         <h5 className={`${planet.first} ${planet.cta}2 p-5 md:text-lg text-sm uppercase text-center`}>live&nbsp;site<span className={`arrow-hp newTab ${planet.border} ml-4 right`}></span></h5>
                       </a>
                     </div>
