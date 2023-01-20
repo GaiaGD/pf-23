@@ -112,7 +112,7 @@ function Homepage() {
               <h1 className={`${planet.first} md:text-4xl text-2xl text-center md:text-left uppercase my-8`}>about me</h1>
               <div className='xl:w-2/3'>
                 <h2 className='md:text-2xl text-lg md:text-right text-center'>
-                After being a digital designer for a long time, becoming a front-end developer was just the natural progression. I love being able to create digital experiences that are useful, clean-coded and solve problems while keeping the highest standard in terms of interface and experience for the user.</h2>
+                After being a digital designer for a long time, becoming a front-end developer was just the natural progression. I love being able to create digital experiences that are useful, clean-coded and solve real-life problems while keeping the highest standard in terms of interface and experience for the user.</h2>
                 <h2 className='md:text-2xl text-lg md:text-right text-center mt-4'>I have a Master in Communication Design from Central Saint Martins - University of the Arts London, and I recently got a certification from MIT in Front-End Development with React.js.</h2>
                 <h2 className='md:text-2xl text-lg md:text-right text-center mt-4'>After having the luck to live and experience different cultures in many cities between Europe, the Middle East and I am now based in Washington DC, US.</h2>
                 <h2 className='md:text-2xl text-lg md:text-right text-center mt-4'>Beside design and technology, I'm passionate about space exploration, I love brazilian jiu-jitsu and I do my best in helping animal rescuing.</h2>
